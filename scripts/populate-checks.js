@@ -3,6 +3,8 @@ const { updateOrCreateSegment } = require('@ulisesgascon/text-tags-manager')
 const path = require('path')
 
 const checks = require('../data/checks.json')
+const bannerContentStartTag = '<!-- BANNER:START -->'
+const bannerContentEndTag = '<!-- BANNER:END -->'
 const levelsStartTag = '<!-- LEVELS:START -->'
 const levelsEndTag = '<!-- LEVELS:END -->'
 const descriptionStartTag = '<!-- DESCRIPTION:START -->'
@@ -75,12 +77,25 @@ slug: /checks/${check.code_name}
 - Retiring: ${check.level_retiring_status}
 `.trim()
   //@TODO: Remove adhoc check for description when https://github.com/OpenPathfinder/visionBoard/issues/159 is fixed
-  const descriptionContent = `## Description
+  const bannerContent = check.implementation_status === 'completed' ? '' : `
+:::warning
+
+This check is not yet implemented! [Contribute or donate to help us](/support-us)
+
+:::
+`.trim()
+  
+const descriptionContent = `
+## Description
 ${!check.description.includes('<') && !check.description.startsWith('{') ? check.description : ''}`.trim()
   const detailsContent = renderDetails(check)
 
   let fileContent = `${metadata}
 
+${bannerContentStartTag}
+${bannerContent}
+${bannerContentEndTag}
+  
 ## Use Case
 ${levelsStartTag}
 ${levelsContent}
@@ -97,6 +112,12 @@ ${detailsEndTag}
   const updateContent = (currentContent) => {
     fileContent = currentContent
     replaceMetadata(fileContent, metadata)
+    fileContent = updateOrCreateSegment({
+      original: fileContent,
+      replacementSegment: bannerContent,
+      startTag: bannerContentStartTag,
+      endTag: bannerContentEndTag
+    })
     fileContent = updateOrCreateSegment({
       original: fileContent,
       replacementSegment: levelsContent,
