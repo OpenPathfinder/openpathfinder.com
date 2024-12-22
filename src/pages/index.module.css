@@ -1,23 +1,88 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: #000 !important; /* Solid black background */
+  color: #fff !important;      /* White text */
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.mainLogo {
+  max-width: 220px;
+  margin-bottom: 1rem;
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Logos Section */
+.logosSection {
+  background-color: #111; /* Slight contrast from pure black */
+  padding: 3rem 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #FFD700; /* Gold accent for section title */
+}
+
+/* Grid of brand logos */
+.logosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.logoCard {
+  background: #000;
+  border: 1px solid #333;
+  padding: 2rem;
+  border-radius: 6px;
+  text-align: center;
+  color: #fff;
+}
+
+.productLogo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.logoCard h3 {
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+/* Call-to-Action Section */
+.callToActionSection {
+  background-color: #000;
+  text-align: center;
+  padding: 3rem 0;
+  color: #fff;
+}
+
+.callToActionSection h2 {
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.callToActionSection p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.outlineButton {
+  border: 2px solid #FFD700;
+  color: #FFD700;
+  background-color: transparent;
+  transition: 0.2s ease-in-out; /* smooth transition */
+}
+
+/* On hover: gold background, black text */
+.outlineButton:hover {
+  background-color: #FFD700;
+  color: #000;
+  border-color: #FFD700;
 }

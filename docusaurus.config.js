@@ -13,29 +13,16 @@ const config = {
   title: 'OpenPathfinder',
   tagline: 'Guiding Open Innovation with Security and Clarity',
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
   url: 'https://openpathfinder.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'openPathfinder', // Usually your GitHub org/user name.
-  projectName: 'openpathfinder.com', // Usually your repo name.
-
+  organizationName: 'openPathfinder',
+  projectName: 'openpathfinder.com',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   presets: [
     [
       'classic',
@@ -73,21 +60,28 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark', 
+        disableSwitch: true,
+        respectPrefersColorScheme: false        
+      },
+      image: 'img/openPathfinder-social-card.jpg',
       navbar: {
         title: 'OpenPathfinder',
         logo: {
           alt: 'OpenPathfinder Logo',
-          src: 'img/logo.svg',
+          src: 'img/openPathfinder_profile.png',
         },
+        style: 'dark', 
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
+          // {to: '/docs/projects/fortSphere', label: 'fortSphere', position: 'left'},
+          // {to: '/docs/projects/visionBoard', label: 'visionBoard', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/openPathfinder/openpathfinder.com',
@@ -98,47 +92,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/openPathfinder/openpathfinder.com',
-              },
-            ],
-          },
-        ],
+        // links: [],
         copyright: `Copyright © ${new Date().getFullYear()} Ulises Gascón. Built with Docusaurus.`,
       },
       prism: {
