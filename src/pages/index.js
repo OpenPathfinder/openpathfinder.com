@@ -23,7 +23,7 @@ export default function Home() {
           <div className={styles.buttons}>
             <a
               className="button button--primary button--lg"
-              href="/docs/intro"
+              href="/docs/getting-started"
             >
               Get Started
             </a>
@@ -36,27 +36,27 @@ export default function Home() {
             <h2 className={styles.sectionTitle}>Our Projects</h2>
             <div className={styles.logosGrid}>
               <div className={styles.logoCard}>
-                <a href="http://localhost:3000/docs/projects/visionBoard/">
+                <a href="/docs/visionBoard/">
                   <img
                     src="/img/visionBoard_profile.png"
                     alt="VisionBoard Logo"
                     className={styles.productLogo}
                   />
                 </a>
-                <a href="http://localhost:3000/docs/projects/visionBoard/">
+                <a href="/docs/visionBoard/">
                   <h3>VisionBoard</h3>
                 </a>
                 <p>Transforming Data into Actionable Insights</p>
               </div>
               <div className={styles.logoCard}>
-                <a href="http://localhost:3000/docs/projects/fortSphere/">
+                <a href="/docs/fortSphere">
                   <img
                     src="/img/fortSphere_profile.png"
                     alt="FortSphere Logo"
                     className={styles.productLogo}
                   />
                 </a>
-                <a href="http://localhost:3000/docs/projects/fortSphere/">
+                <a href="/docs/fortSphere">
                   <h3>FortSphere</h3>
                 </a>
                 <p>Fortify Your Digital Sphere, One Command at a Time</p>
@@ -73,7 +73,7 @@ export default function Home() {
             </p>
             <a 
               className="button button--primary button--lg"
-              href="/docs/intro"
+              href="/docs/getting-started"
             >
               Read the Docs
             </a>
