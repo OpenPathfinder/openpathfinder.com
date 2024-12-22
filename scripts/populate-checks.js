@@ -77,8 +77,9 @@ slug: /checks/${check.code_name}
 - Active: ${check.level_active_status}
 - Retiring: ${check.level_retiring_status}
 `.trim()
+  //@TODO: Remove adhoc check for description when https://github.com/OpenPathfinder/visionBoard/issues/159 is fixed
   const descriptionContent = `## Description
-${typeof check.description === check.description.replace(/[&<>"']/g, c => `&#${c.charCodeAt(0)};`) ? check.description : ''}`.trim()
+${!check.description.includes('<') && !check.description.startsWith('{') ? check.description : ''}`.trim()
   const detailsContent = renderDetails(check)
 
   let fileContent = `${metadata}
