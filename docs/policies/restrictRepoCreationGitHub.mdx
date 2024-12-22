@@ -1,0 +1,16 @@
+---
+sidebar_position: 1
+id: restrictRepoCreationGitHub
+title: Restrict Repository Creation
+slug: /policies/restrictRepoCreationGitHub
+---
+
+<!-- DESCRIPTION:START -->
+## Description
+This policy is designed to prevent members of a GitHub organization from creating new repositories. This includes public and private repositories.
+<!-- DESCRIPTION:END -->
+
+<!-- TECHNICAL-DETAILS:START -->
+## Technical Details
+This policy will set the following values for the organization(`members_allowed_repository_creation_type=none`, `members_can_create_public_repositories=false`, `members_can_create_private_repositories=false`) at the organization level.
+<!-- TECHNICAL-DETAILS:END -->
