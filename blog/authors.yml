@@ -1,23 +1,10 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ openPathfinder
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+ulisesgascon:
+  name: Ulises Gascón
+  title: OpenPathFinder Universe Creator
+  url: https://ulisesgascon.com
+  image_url: https://github.com/ulisesgascon.png
   page: true
   socials:
-    x: yangshunz
-    github: yangshun
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
-  socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    github: ulisesgascon
+    linkedin: ulisesgascon
+    twitter: kom_256
