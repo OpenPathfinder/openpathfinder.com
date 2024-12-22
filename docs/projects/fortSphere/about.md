@@ -9,7 +9,7 @@ slug: /fortSphere
 
 # fortSphere
 
-Fortify your Digital Sphere, once command at a time
+Fortify your Digital Sphere, one command at a time
 
 ---
 
