@@ -3,6 +3,8 @@ const { updateOrCreateSegment } = require('@ulisesgascon/text-tags-manager')
 const path = require('path')
 
 const checks = require('../data/checks.json')
+const bannerContentStartTag = '<!-- BANNER:START -->'
+const bannerContentEndTag = '<!-- BANNER:END -->'
 const levelsStartTag = '<!-- LEVELS:START -->'
 const levelsEndTag = '<!-- LEVELS:END -->'
 const descriptionStartTag = '<!-- DESCRIPTION:START -->'
@@ -44,7 +46,6 @@ const renderDetails = (check) => {
   const sourcesDetails = addContent('Sources', check.sources_description, check.sources_url)
   const howToDetails = addContent('How To', check.how_to_description, check.how_to_url)
   let content = '## Details\n'
-  content += `- Implementation Status: ${check.implementation_status}\n`
   if (implementationDetails) {
     content += `${implementationDetails}\n`
   }
@@ -59,8 +60,6 @@ const renderDetails = (check) => {
   if (howToDetails) {
     content += `${howToDetails}\n`
   }
-  content += `- Created at ${check.created_at}\n`
-  content += `- Updated at ${check.updated_at}`
   return content
 }
 
@@ -78,12 +77,25 @@ slug: /checks/${check.code_name}
 - Retiring: ${check.level_retiring_status}
 `.trim()
   //@TODO: Remove adhoc check for description when https://github.com/OpenPathfinder/visionBoard/issues/159 is fixed
-  const descriptionContent = `## Description
+  const bannerContent = check.implementation_status === 'completed' ? '' : `
+:::tip
+
+This check is currently under development and not yet implemented. [Click here to learn how you can help](/contribute).
+
+:::
+`.trim()
+  
+const descriptionContent = `
+## Description
 ${!check.description.includes('<') && !check.description.startsWith('{') ? check.description : ''}`.trim()
   const detailsContent = renderDetails(check)
 
   let fileContent = `${metadata}
 
+${bannerContentStartTag}
+${bannerContent}
+${bannerContentEndTag}
+  
 ## Use Case
 ${levelsStartTag}
 ${levelsContent}
@@ -100,6 +112,12 @@ ${detailsEndTag}
   const updateContent = (currentContent) => {
     fileContent = currentContent
     replaceMetadata(fileContent, metadata)
+    fileContent = updateOrCreateSegment({
+      original: fileContent,
+      replacementSegment: bannerContent,
+      startTag: bannerContentStartTag,
+      endTag: bannerContentEndTag
+    })
     fileContent = updateOrCreateSegment({
       original: fileContent,
       replacementSegment: levelsContent,

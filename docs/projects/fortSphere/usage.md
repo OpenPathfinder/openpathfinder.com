@@ -5,10 +5,11 @@ slug: /fortSphere/usage
 ---
 
 
-🫠 If you are not familiar with the tool [checkout this demo](/docs/fortSphere#demo)
+:::tip
 
+If you are not familiar with the tool [checkout this demo](/docs/fortSphere#demo-walkthrough)
 
-
+:::
 
 
 ### Version Command
