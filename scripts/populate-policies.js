@@ -7,6 +7,8 @@ const descriptionStartTag = '<!-- DESCRIPTION:START -->'
 const descriptionEndTag = '<!-- DESCRIPTION:END -->'
 const technicalDetailsStartTag = '<!-- TECHNICAL-DETAILS:START -->'
 const technicalDetailsEndTag = '<!-- TECHNICAL-DETAILS:END -->'
+const listStartTag = '<!-- LIST:START -->'
+const listEndTag = '<!-- LIST:END -->'
 
 // @TODO: Move this function to a shared file
 const replaceMetadata = (fileContent, metadata) => {
@@ -61,3 +63,24 @@ ${technicalDetailsEndTag}
   }
   writeFileSync(destination, fileContent)
 })
+
+// Update the policies list
+const policiesList = policies.map((policy) => {
+  return `- ${policy.title} ([${policy.name}](/docs/policies/${policy.name}))`
+}).join('\n')
+
+const policiesListContent = `${listStartTag}
+${policiesList}
+${listEndTag}`
+
+const policiesListDestination = path.join(process.cwd(), 'docs/projects/fortSphere/policies.md')
+policiesListFileContent = readFileSync(policiesListDestination, 'utf8')
+
+policiesListFileContent = updateOrCreateSegment({
+  original: policiesListFileContent,
+  replacementSegment: policiesListContent,
+  startTag: listStartTag,
+  endTag: listEndTag
+})
+
+writeFileSync(policiesListDestination, policiesListFileContent)
