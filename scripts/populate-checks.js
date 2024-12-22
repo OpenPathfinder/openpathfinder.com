@@ -78,9 +78,9 @@ slug: /checks/${check.code_name}
 `.trim()
   //@TODO: Remove adhoc check for description when https://github.com/OpenPathfinder/visionBoard/issues/159 is fixed
   const bannerContent = check.implementation_status === 'completed' ? '' : `
-:::warning
+:::tip
 
-This check is not yet implemented! [Contribute or donate to help us](/support-us)
+This check is currently under development and not yet implemented. [Click here to learn how you can help](/contribute).
 
 :::
 `.trim()
