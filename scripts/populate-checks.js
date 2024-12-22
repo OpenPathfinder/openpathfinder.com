@@ -44,7 +44,6 @@ const renderDetails = (check) => {
   const sourcesDetails = addContent('Sources', check.sources_description, check.sources_url)
   const howToDetails = addContent('How To', check.how_to_description, check.how_to_url)
   let content = '## Details\n'
-  content += `- Implementation Status: ${check.implementation_status}\n`
   if (implementationDetails) {
     content += `${implementationDetails}\n`
   }
@@ -59,8 +58,6 @@ const renderDetails = (check) => {
   if (howToDetails) {
     content += `${howToDetails}\n`
   }
-  content += `- Created at ${check.created_at}\n`
-  content += `- Updated at ${check.updated_at}`
   return content
 }
 
