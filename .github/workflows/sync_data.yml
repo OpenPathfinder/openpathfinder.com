@@ -78,6 +78,18 @@ jobs:
           cd ..
           rm -rf temp-fortSphere
 
+      - name: Debug Git Changes
+        run: |
+          git status
+          git diff
+
+      - name: Commit Updated Policies
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: sync with fortSphere Policies"
+
       - name: Install Dependencies and update dynamic content
         run: |
           npm install
