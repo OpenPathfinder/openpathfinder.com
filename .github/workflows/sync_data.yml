@@ -1,4 +1,4 @@
-name: Sync and update Compliance Checks
+name: Sync checks and policies
 
 on:
   # Manually trigger the workflow
@@ -67,10 +67,22 @@ jobs:
           git add -A
           git diff --cached --quiet || git commit -m "chore: sync with visionBoard Checks"
 
+      - name: Clone fortSphere and import policies
+        run: |
+          git clone https://github.com/OpenPathfinder/fortSphere.git temp-fortSphere
+          cd temp-fortSphere
+          npm install
+          mkdir -p output
+          npm run export-policies
+          cp output/policies.json ../data/policies.json
+          cd ..
+          rm -rf temp-fortSphere
+
       - name: Install Dependencies and update dynamic content
         run: |
           npm install
           npm run populate-checks
+          npm run populate-policies
 
       - name: Debug Git Changes
         run: |
