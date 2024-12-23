@@ -69,16 +69,13 @@ const policiesList = policies.map((policy) => {
   return `- ${policy.title} ([${policy.name}](/docs/policies/${policy.name}))`
 }).join('\n')
 
-const policiesListContent = `${listStartTag}
-${policiesList}
-${listEndTag}`
 
 const policiesListDestination = path.join(process.cwd(), 'docs/projects/fortSphere/policies.md')
 policiesListFileContent = readFileSync(policiesListDestination, 'utf8')
 
 policiesListFileContent = updateOrCreateSegment({
   original: policiesListFileContent,
-  replacementSegment: policiesListContent,
+  replacementSegment: policiesList,
   startTag: listStartTag,
   endTag: listEndTag
 })
