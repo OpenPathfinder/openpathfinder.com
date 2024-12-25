@@ -48,7 +48,7 @@ const renderDetails = (check) => {
     content += `${implementationDetails}\n`
   }
   content += `- C-SCRM: ${check.is_c_scrm}\n`
-  content += `- Priority Group: ${check.priority_group}\n`
+  content += `- Priority Group: ${check.default_priority_group}\n`
   if (mitreDetails) {
     content += `${mitreDetails}\n`
   }
