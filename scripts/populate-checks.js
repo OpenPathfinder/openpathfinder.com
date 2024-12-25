@@ -5,8 +5,6 @@ const path = require('path')
 const checks = require('../data/checks.json')
 const bannerContentStartTag = '<!-- BANNER:START -->'
 const bannerContentEndTag = '<!-- BANNER:END -->'
-const levelsStartTag = '<!-- LEVELS:START -->'
-const levelsEndTag = '<!-- LEVELS:END -->'
 const descriptionStartTag = '<!-- DESCRIPTION:START -->'
 const descriptionEndTag = '<!-- DESCRIPTION:END -->'
 const detailsStartTag = '<!-- DETAILS:START -->'
@@ -71,11 +69,6 @@ id: ${check.id}
 title: ${check.title}
 slug: /checks/${check.code_name}
 ---`.trim()
-  const levelsContent = `
-- Incubating: ${check.level_incubating_status}
-- Active: ${check.level_active_status}
-- Retiring: ${check.level_retiring_status}
-`.trim()
   //@TODO: Remove adhoc check for description when https://github.com/OpenPathfinder/visionBoard/issues/159 is fixed
   const bannerContent = check.implementation_status === 'completed' ? '' : `
 :::tip
@@ -97,9 +90,6 @@ ${bannerContent}
 ${bannerContentEndTag}
   
 ## Use Case
-${levelsStartTag}
-${levelsContent}
-${levelsEndTag}
 
 ${descriptionStartTag}
 ${descriptionContent}
@@ -117,12 +107,6 @@ ${detailsEndTag}
       replacementSegment: bannerContent,
       startTag: bannerContentStartTag,
       endTag: bannerContentEndTag
-    })
-    fileContent = updateOrCreateSegment({
-      original: fileContent,
-      replacementSegment: levelsContent,
-      startTag: levelsStartTag,
-      endTag: levelsEndTag
     })
     fileContent = updateOrCreateSegment({
       original: fileContent,
