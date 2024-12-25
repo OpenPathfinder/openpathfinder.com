@@ -47,8 +47,6 @@ jobs:
           mkdir -p output
           npm run db:export-checks
           cp output/checks.json ../data/checks.json
-          npm run db:export-policies
-          cp output/policies.json ../data/policies.json
           npm run db:export-checklists
           cp output/checklists.json ../data/checklists.json
           cd ..
@@ -69,7 +67,30 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "chore: sync with visionBoard checks, policies and checklists"
+          git diff --cached --quiet || git commit -m "chore: sync with visionBoard checks and checklists"
+
+      - name: Clone fortSphere and import policies
+        run: |
+          git clone https://github.com/OpenPathfinder/fortSphere.git temp-fortSphere
+          cd temp-fortSphere
+          npm install
+          mkdir -p output
+          npm run export-policies
+          cp output/policies.json ../data/policies.json
+          cd ..
+          rm -rf temp-fortSphere
+
+      - name: Debug Git Changes
+        run: |
+          git status
+          git diff
+
+      - name: Commit Updated Policies
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: sync with fortSphere Policies"
 
       - name: Install Dependencies and update dynamic content
         run: |
