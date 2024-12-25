@@ -44,11 +44,12 @@ const renderDetails = (check) => {
   const sourcesDetails = addContent('Sources', check.sources_description, check.sources_url)
   const howToDetails = addContent('How To', check.how_to_description, check.how_to_url)
   let content = '## Details\n'
+  content += `- Default Category: ${check.default_section_name}\n`
+  content += `- Default Priority Group: ${check.default_priority_group}\n`
   if (implementationDetails) {
     content += `${implementationDetails}\n`
   }
   content += `- C-SCRM: ${check.is_c_scrm}\n`
-  content += `- Priority Group: ${check.default_priority_group}\n`
   if (mitreDetails) {
     content += `${mitreDetails}\n`
   }
