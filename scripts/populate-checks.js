@@ -5,8 +5,6 @@ const path = require('path')
 const checks = require('../data/checks.json')
 const bannerContentStartTag = '<!-- BANNER:START -->'
 const bannerContentEndTag = '<!-- BANNER:END -->'
-const levelsStartTag = '<!-- LEVELS:START -->'
-const levelsEndTag = '<!-- LEVELS:END -->'
 const descriptionStartTag = '<!-- DESCRIPTION:START -->'
 const descriptionEndTag = '<!-- DESCRIPTION:END -->'
 const detailsStartTag = '<!-- DETAILS:START -->'
@@ -46,11 +44,12 @@ const renderDetails = (check) => {
   const sourcesDetails = addContent('Sources', check.sources_description, check.sources_url)
   const howToDetails = addContent('How To', check.how_to_description, check.how_to_url)
   let content = '## Details\n'
+  content += `- Default Category: ${check.default_section_name}\n`
+  content += `- Default Priority Group: ${check.default_priority_group}\n`
   if (implementationDetails) {
     content += `${implementationDetails}\n`
   }
   content += `- C-SCRM: ${check.is_c_scrm}\n`
-  content += `- Priority Group: ${check.priority_group}\n`
   if (mitreDetails) {
     content += `${mitreDetails}\n`
   }
@@ -71,11 +70,6 @@ id: ${check.id}
 title: ${check.title}
 slug: /checks/${check.code_name}
 ---`.trim()
-  const levelsContent = `
-- Incubating: ${check.level_incubating_status}
-- Active: ${check.level_active_status}
-- Retiring: ${check.level_retiring_status}
-`.trim()
   //@TODO: Remove adhoc check for description when https://github.com/OpenPathfinder/visionBoard/issues/159 is fixed
   const bannerContent = check.implementation_status === 'completed' ? '' : `
 :::tip
@@ -97,9 +91,6 @@ ${bannerContent}
 ${bannerContentEndTag}
   
 ## Use Case
-${levelsStartTag}
-${levelsContent}
-${levelsEndTag}
 
 ${descriptionStartTag}
 ${descriptionContent}
@@ -117,12 +108,6 @@ ${detailsEndTag}
       replacementSegment: bannerContent,
       startTag: bannerContentStartTag,
       endTag: bannerContentEndTag
-    })
-    fileContent = updateOrCreateSegment({
-      original: fileContent,
-      replacementSegment: levelsContent,
-      startTag: levelsStartTag,
-      endTag: levelsEndTag
     })
     fileContent = updateOrCreateSegment({
       original: fileContent,
