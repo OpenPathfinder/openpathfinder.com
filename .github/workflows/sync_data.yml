@@ -47,9 +47,9 @@ jobs:
           mkdir -p output
           npm run db:export-checks
           cp output/checks.json ../data/checks.json
-          npm run export-policies
+          npm run db:export-policies
           cp output/policies.json ../data/policies.json
-          npm run export-checklists
+          npm run db:export-checklists
           cp output/checklists.json ../data/checklists.json
           cd ..
           rm -rf temp-visionBoard
