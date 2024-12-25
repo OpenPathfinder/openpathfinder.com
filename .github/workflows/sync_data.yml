@@ -38,7 +38,7 @@ jobs:
           git fetch origin chore/update-content || true
           git checkout chore/update-content || git checkout -b chore/update-content
 
-      - name: Clone visionBoard and import checks
+      - name: Clone visionBoard and run imports
         run: |
           git clone https://github.com/OpenPathfinder/visionBoard.git temp-visionBoard
           cd temp-visionBoard
@@ -47,6 +47,10 @@ jobs:
           mkdir -p output
           npm run db:export-checks
           cp output/checks.json ../data/checks.json
+          npm run export-policies
+          cp output/policies.json ../data/policies.json
+          npm run export-checklists
+          cp output/checklists.json ../data/checklists.json
           cd ..
           rm -rf temp-visionBoard
         env:
@@ -60,41 +64,19 @@ jobs:
           git status
           git diff
 
-      - name: Commit Updated Checks
+      - name: Commit Updated data imported from visionBoard
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "chore: sync with visionBoard Checks"
-
-      - name: Clone fortSphere and import policies
-        run: |
-          git clone https://github.com/OpenPathfinder/fortSphere.git temp-fortSphere
-          cd temp-fortSphere
-          npm install
-          mkdir -p output
-          npm run export-policies
-          cp output/policies.json ../data/policies.json
-          cd ..
-          rm -rf temp-fortSphere
-
-      - name: Debug Git Changes
-        run: |
-          git status
-          git diff
-
-      - name: Commit Updated Policies
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add -A
-          git diff --cached --quiet || git commit -m "chore: sync with fortSphere Policies"
+          git diff --cached --quiet || git commit -m "chore: sync with visionBoard checks, policies and checklists"
 
       - name: Install Dependencies and update dynamic content
         run: |
           npm install
           npm run populate-checks
           npm run populate-policies
+          npm run populate-checklists
 
       - name: Debug Git Changes
         run: |
