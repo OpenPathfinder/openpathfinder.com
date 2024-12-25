@@ -9,6 +9,8 @@ const descriptionStartTag = '<!-- DESCRIPTION:START -->'
 const descriptionEndTag = '<!-- DESCRIPTION:END -->'
 const detailsStartTag = '<!-- DETAILS:START -->'
 const detailsEndTag = '<!-- DETAILS:END -->'
+const listStartTag = '<!-- LIST:START -->'
+const listEndTag = '<!-- LIST:END -->'
 
 // @TODO: Move this function to a shared file
 const replaceMetadata = (fileContent, metadata) => {
@@ -131,3 +133,20 @@ ${detailsEndTag}
   }
   writeFileSync(destination, fileContent)
 })
+
+// Populate lists
+const checksList = checks.map((check) => {
+  return `- **[${check.code_name}](/docs/checks/${check.code_name})**: ${check.title} `
+}).join('\n')
+
+const checksListDestination = path.join(process.cwd(), 'docs/projects/visionBoard/checks.md')
+checksListFileContent = readFileSync(checksListDestination, 'utf8')
+
+checksListFileContent = updateOrCreateSegment({
+  original: checksListFileContent,
+  replacementSegment: checksList,
+  startTag: listStartTag,
+  endTag: listEndTag
+})
+
+writeFileSync(checksListDestination, checksListFileContent)
