@@ -119,8 +119,8 @@ jobs:
           gh pr create \
             --base main \
             --head chore/update-content \
-            --title "[AUTO] Sync with dashboard database" \
-            --body "This PR updates the content based on the current state of the Dashboard." \
+            --title "[AUTO] Sync policies, checks and checklists" \
+            --body "This PR updates the content based on the current state of visionBoard and fortSphere." \
             --assignee "${{ github.actor }}" \
             --reviewer "${{ github.actor }}"
         env:
