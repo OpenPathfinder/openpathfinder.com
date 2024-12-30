@@ -13,9 +13,9 @@ Fortify your Digital Sphere, one command at a time
 
 ---
 
-**fortSphere** is a community-driven, open-source CLI tool crafted with love by maintainers for maintainers. It empowers you to secure and streamline your GitHub organizations and repositories, ensuring you’re always in control. Built with a secure-by-default philosophy, fortSphere guarantees that:
+**fortSphere** is a community-driven, open source CLI tool crafted with love by maintainers for maintainers. It empowers you to secure and streamline your GitHub organizations and repositories, ensuring you’re always in control. Built with a secure-by-default philosophy, fortSphere guarantees that:
 - **Your Tokens and Data Stay Local:** All operations are performed locally—your sensitive information never leaves your machine.
-- **No Blind Trust Required:** As an open-source project, you don’t need to trust others—just the transparent and collaborative efforts of its contributors.
+- **No Blind Trust Required:** As an open source project, you don’t need to trust others—just the transparent and collaborative efforts of its contributors.
 
 ---
 

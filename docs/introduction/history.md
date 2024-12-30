@@ -6,15 +6,15 @@ slug: /history
 
 # History of OpenPathfinder
 
-At OpenPathfinder, we believe that open-source collaboration drives innovation and empowers communities to build sustainable solutions. Here’s how our journey began and evolved over time.
+At OpenPathfinder, we believe that open source collaboration drives innovation and empowers communities to build sustainable solutions. Here’s how our journey began and evolved over time.
 
 ---
 
-OpenPathfinder emerged from a collective commitment to enhance the management and security of open-source projects. It began as an initiative within the OpenJS Foundation's [Security Collaboration Space](https://github.com/openjs-foundation/security-collab-space), a forum dedicated to governing the security progress of JavaScript ecosystem projects.
+OpenPathfinder emerged from a collective commitment to enhance the management and security of open source projects. It began as an initiative within the OpenJS Foundation's [Security Collaboration Space](https://github.com/openjs-foundation/security-collab-space), a forum dedicated to governing the security progress of JavaScript ecosystem projects.
 
 Initially, the team envisioned a "dashboard"—a dynamic tool to visualize the progress of projects adhering to the principles of the ["OpenJS Foundation Security Compliance Guide v1.0"](https://docs.google.com/document/d/1tvJYtptFXqvS4863dhPwoVmFT5Jwr_WZLralrnulCZs/edit?tab=t.0#heading=h.2waouzm4ry8i). This guide served as a foundation for security compliance best practices, emphasizing the importance of equipping maintainers with tools to address complex security requirements effectively.
 
-However, the team soon realized the potential to create a solution that transcended the limitations of a single ecosystem. This broadened the project’s scope into a platform capable of supporting diverse stacks and standards. The vision expanded from security compliance to improving the overall operational health of open-source projects. Thus, OpenPathfinder was born—a universal solution designed to empower maintainers and foster sustainable project growth.
+However, the team soon realized the potential to create a solution that transcended the limitations of a single ecosystem. This broadened the project’s scope into a platform capable of supporting diverse stacks and standards. The vision expanded from security compliance to improving the overall operational health of open source projects. Thus, OpenPathfinder was born—a universal solution designed to empower maintainers and foster sustainable project growth.
 
 A key principle in OpenPathfinder's design is ensuring **security and autonomy**. Both **VisionBoard** and **fortSphere**, the core tools of the platform, are self-hosted. This approach guarantees data security and provides maintainers with full control over their workflows and tools, eliminating reliance on third-party hosting and mitigating associated vulnerabilities.
 
@@ -23,7 +23,7 @@ A key principle in OpenPathfinder's design is ensuring **security and autonomy**
 - Deliver actionable insights for enhancing project health.
 - Enable seamless policy management across distributed repositories.
 
-Built by maintainers for maintainers, OpenPathfinder embodies the spirit of collaboration, turning ambitious ideas into practical solutions that empower open-source teams to thrive.
+Built by maintainers for maintainers, OpenPathfinder embodies the spirit of collaboration, turning ambitious ideas into practical solutions that empower open source teams to thrive.
 
 ---
 
@@ -69,7 +69,7 @@ Key resources from this milestone:
     allowfullscreen>
 </iframe>
 
-This milestone marked a turning point, providing maintainers with actionable tools and a roadmap to navigate complex security landscapes effectively. The feedback and testing phases that followed refined the guide, ensuring its practical application across diverse open-source projects.
+This milestone marked a turning point, providing maintainers with actionable tools and a roadmap to navigate complex security landscapes effectively. The feedback and testing phases that followed refined the guide, ensuring its practical application across diverse open source projects.
 
 ---
 
@@ -163,7 +163,7 @@ Key Features:
 
 As OpenPathfinder evolves, we remain committed to:
 - Expanding our toolset with new features and integrations.
-- Engaging the open-source community to drive innovation.
+- Engaging the open source community to drive innovation.
 - Building a more secure and collaborative ecosystem for maintainers and developers.
 
 We invite you to join us on this journey. Whether you’re a contributor, a maintainer, or simply curious about our projects, OpenPathfinder welcomes you to help shape the future of open source.
