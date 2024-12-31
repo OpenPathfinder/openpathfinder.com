@@ -27,7 +27,6 @@ Our current projects:
 
 ![visionBoard logo in header format](/img/visionBoard_header.png)
 
-
 ## VisionBoard
 
 VisionBoard helps organizations transform raw data into actionable insights. [Created to support OpenJS Foundation projects](/docs/history), it simplifies the complex task of monitoring security and operational health.
@@ -42,7 +41,6 @@ VisionBoard is the go-to tool for organizations aiming to maintain compliance an
 ---
 
 ![fortSphere logo in header format](/img/fortSphere_header.png)
-
 
 ## fortSphere
 
@@ -72,6 +70,25 @@ By combining VisionBoard and fortSphere, OpenPathfinder offers:
 2. **Join the Community**:
    - Participate in discussions, explore issues, and contribute on [GitHub](https://github.com/OpenPathfinder).
 
+3. **Run Locally**:
+   If you prefer to start exploring the tools locally, use the following `docker-compose.yml` file:
+
+   ```yml
+   # soon
+   ```
+
+### Commands
+- **Start the services**:
+  ```bash
+  docker compose up
+  ```
+
+- **Stop and remove the services**:
+  ```bash
+  docker compose down
+  ```
+
+This setup allows you to explore VisionBoard’s dashboard and fortSphere’s CLI in a local environment.
 
 ---
 
