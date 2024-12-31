@@ -53,22 +53,6 @@ We are committed to providing tools that empower developers and organizations. H
 - **Individual Donations**: Contributions of any size are welcome and help us continue our work.
 - **Corporate Sponsorship**: If you represent a company, you can sponsor the project and gain recognition while supporting the open-source community.
 
-### Sponsorship Tiers
-
-We offer flexible sponsorship tiers tailored to companies and organizations:
-
-1. **Supporter**:
-   - Logo featured on our website’s sponsor page.
-   - Acknowledgment in the project’s documentation.
-2. **Advocate**:
-   - Includes all Supporter benefits.
-   - Priority support for feature requests.
-   - Early access to new features and updates.
-3. **Champion**:
-   - Includes all Advocate benefits.
-   - Personalized integration support.
-   - Dedicated consultation sessions with the development team.
-
 For more details, visit our [Sponsorship Page](/support).
 
 ---

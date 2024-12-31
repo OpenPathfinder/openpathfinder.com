@@ -84,6 +84,7 @@ const config = {
           // {to: '/docs/projects/visionBoard', label: 'visionBoard', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/contribute', label: 'Contribute', position: 'left'},
+          {to: '/support', label: 'Support', position: 'left'},
           {
             href: 'https://github.com/openPathfinder/openpathfinder.com',
             label: 'GitHub',
