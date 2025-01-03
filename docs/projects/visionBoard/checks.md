@@ -25,7 +25,6 @@ Explore the full list of available checks below:
 - **[githubWebhookSecrets](/docs/checks/githubWebhookSecrets)**: Secure GitHub Webhooks with secrets 
 - **[requireCodeOwnersReviewForLargeTeams](/docs/checks/requireCodeOwnersReviewForLargeTeams)**: Require code owners review 
 - **[restrictedOrgPermissions](/docs/checks/restrictedOrgPermissions)**: Restrict default GitHub Org member permissions 
-- **[adminRepoCreationOnly](/docs/checks/adminRepoCreationOnly)**: Allow only admins to create public repositories 
 - **[preventBranchProtectionBypass](/docs/checks/preventBranchProtectionBypass)**: Prevent admins from bypassing branch protection 
 - **[defineFunctionalRoles](/docs/checks/defineFunctionalRoles)**: Define roles aligned to functional responsibilities 
 - **[githubWriteAccessRoles](/docs/checks/githubWriteAccessRoles)**: Define teams/individuals with write access to repositories 
@@ -84,4 +83,5 @@ Explore the full list of available checks below:
 - **[patchExploitableNoncCriticalVulns60Days](/docs/checks/patchExploitableNoncCriticalVulns60Days)**: Patch non-critical vulnerabilities in 60 Days 
 - **[githubOrgMFA](/docs/checks/githubOrgMFA)**: Enforce MFA in GitHub organization(s) 
 - **[softwareDesignTraining](/docs/checks/softwareDesignTraining)**: Training on secure software design 
+- **[adminRepoCreationOnly](/docs/checks/adminRepoCreationOnly)**: Allow only admins to create public repositories 
 <!-- LIST:END -->
