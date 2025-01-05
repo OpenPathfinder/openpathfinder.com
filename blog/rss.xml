@@ -28,9 +28,9 @@
 <ul>
 <li><strong>Customizable <a href="https://openpathfinder.com/docs/visionBoard/Checks">Checks</a> and <a href="https://openpathfinder.com/docs/visionBoard/checklists">Checklists</a>:</strong> Automates compliance with security standards, such as <a href="https://openpathfinder.com/docs/visionBoard/checklists#official-checklists">the OpenJS Security Compliance Guide</a>. Offers flexibility to define checks tailored to your project needs.</li>
 <li><strong>Integration with tools:</strong> Connects to <a href="https://openpathfinder.com/docs/visionBoard/providers#github-api">GitHub APIs</a>, <a href="https://openpathfinder.com/docs/visionBoard/providers#ossf-scorecard">OSSF Scorecard</a>, and other external sources to enrich and analyze data. This ensures up-to-date and comprehensive insights.</li>
-<li><strong>Intuitive dashboards:</strong> Offers visual insights into the state of your projects, making it easier to identify trends, risks, and areas for improvement.</li>
+<li><strong>Intuitive dashboards:</strong> Offers <a href="https://openpathfinder.com/docs/visionBoard/report-management">visual insights</a> into the state of your projects, making it easier to identify trends, risks, and areas for improvement.</li>
 </ul>
-<p>By focusing on <strong>planning</strong> and <strong>clarity</strong>, VisionBoard helps keep your entire team aligned and moving forward together.</p>
+<p>By focusing on <strong>planning</strong> and <strong>clarity</strong>, VisionBoard helps keep your entire team aligned around compliance and community expectations.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="fortsphere">FortSphere<a href="https://openpathfinder.com/blog/welcome#fortsphere" class="hash-link" aria-label="Direct link to FortSphere" title="Direct link to FortSphere">​</a></h2>
 <p><a href="https://openpathfinder.com/docs/fortSphere">FortSphere</a> is a community-driven, open source CLI tool crafted with love by maintainers for maintainers. It empowers you to secure and streamline your GitHub organizations and repositories, ensuring you’re always in control. Here are some highlights:</p>
 <ul>
