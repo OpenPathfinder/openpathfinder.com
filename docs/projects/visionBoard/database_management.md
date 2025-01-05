@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 title: Database Management
 slug: /visionBoard/database-management
 ---
