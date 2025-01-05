@@ -59,15 +59,15 @@ Key resources from this milestone:
 
 #### Highlight: Interactive Introduction to the Compliance Guide
 
-<iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/ZjmpNIYpvnc" 
-    title="Overview of OpenJS Security Compliance Guide v1.0" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
+<div className="iframe-container">
+    <iframe 
+        src="https://www.youtube.com/embed/ZjmpNIYpvnc" 
+        title="Overview of OpenJS Security Compliance Guide v1.0" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+</div>
+
 
 This milestone marked a turning point, providing maintainers with actionable tools and a roadmap to navigate complex security landscapes effectively. The feedback and testing phases that followed refined the guide, ensuring its practical application across diverse open source projects.
 
@@ -79,16 +79,15 @@ While the original documents served as a strong foundation for discussion and fe
 
 The website grouped all the compliance information in an intuitive and accessible way, making it easier for maintainers to navigate and implement the guidelines. During this stage, the team synchronized updates with the original documents, incorporating community feedback in real-time.
 
-<iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/GUqsDqZMEec?si=G2PCVsqW5LLL6emc&amp;start=2471" 
-    title="Overview of OpenJS Security Compliance Guide v1.0" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
 
+<div className="iframe-container">
+    <iframe 
+        src="https://www.youtube.com/embed/GUqsDqZMEec?si=G2PCVsqW5LLL6emc&amp;start=2471" 
+        title="Overview of OpenJS Security Compliance Guide v1.0" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+</div>
 
 
 
@@ -111,15 +110,15 @@ The POC leveraged local file storage, a CLI interface, and basic reporting and a
 
 #### Highlight: Full Demo of the Dashboard
 
-<iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/B1kd8k5SvBI" 
-    title="Dashboard Proof of Concept Demo" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
+<div className="iframe-container">
+    <iframe 
+        src="https://www.youtube.com/embed/B1kd8k5SvBI" 
+        title="Dashboard Proof of Concept Demo" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+</div>
+
 
 Key Resources:
 - **Slides**: [Presentation](https://slides.ulisesgascon.com/openjs-security-program-standards)
