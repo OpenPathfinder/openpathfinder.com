@@ -66,13 +66,18 @@ export default function Home() {
         </section>
         <section className={styles.callToActionSection}>
           <div className="container">
-            <h2>Ready to Explore?</h2>
-            <p>
-              Dive deeper into our documentation to learn how to get the most
-              out of our tools.
-            </p>
+          <h2>Ready to Explore?</h2>
+          <div className="iframe-container">
+              <iframe 
+                  src="https://www.youtube.com/embed/gf3BcLS_dXw" 
+                  title="Dashboard Proof of Concept Demo" 
+                  frameborder="0" 
+                  allowfullscreen>
+              </iframe>
+            </div>
+
             <a 
-              className="button button--primary button--lg"
+              className="button button--primary button--lg margin-top--md"
               href="/docs/getting-started"
             >
               Read the Docs
