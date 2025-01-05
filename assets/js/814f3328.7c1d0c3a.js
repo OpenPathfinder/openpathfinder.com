@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopenpathfinder_com=self.webpackChunkopenpathfinder_com||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to OpenPathfinder: Explore Our Mission and Tools","permalink":"/blog/welcome","unlisted":false,"date":"2025-01-05T00:00:00.000Z"}]}')}}]);

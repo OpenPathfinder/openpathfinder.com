@@ -4,18 +4,60 @@
         <title>OpenPathfinder Blog</title>
         <link>https://openpathfinder.com/blog</link>
         <description>OpenPathfinder Blog</description>
-        <lastBuildDate>Sun, 22 Dec 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Jan 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Hello World!]]></title>
+            <title><![CDATA[Welcome to OpenPathfinder: Explore Our Mission and Tools]]></title>
             <link>https://openpathfinder.com/blog/welcome</link>
             <guid>https://openpathfinder.com/blog/welcome</guid>
-            <pubDate>Sun, 22 Dec 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem Ipsum]]></description>
-            <content:encoded><![CDATA[<p>Lorem Ipsum</p>]]></content:encoded>
-            <category>Docusaurus</category>
+            <pubDate>Sun, 05 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Learn about OpenPathfinder's mission, VisionBoard, FortSphere, and History. Watch our Proof of Concept demo and discover how Docusaurus helps power our documentation.]]></description>
+            <content:encoded><![CDATA[<p>Welcome to the <strong>OpenPathfinder</strong> blog! We're thrilled to have you here. This blog will serve as a space to share project insights, tutorials, updates, and community spotlights. If you’re new to OpenPathfinder, this post will give you an overview of what we’re all about, including <strong>VisionBoard</strong>, <strong>FortSphere</strong>, and our project <strong>History</strong>. Plus, we’ve included a special <strong>demo video</strong> below—check it out!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-openpathfinder">What is OpenPathfinder?<a href="https://openpathfinder.com/blog/welcome#what-is-openpathfinder" class="hash-link" aria-label="Direct link to What is OpenPathfinder?" title="Direct link to What is OpenPathfinder?">​</a></h2>
+<p>OpenPathfinder is a collaborative open source initiative that empowers developers and organizations to secure, monitor, and manage their projects efficiently. We are committed to building tools that:</p>
+<ul>
+<li><strong>Simplify compliance</strong> with security and operational standards.</li>
+<li><strong>Automate repetitive tasks</strong>, freeing up time for maintaining projects.</li>
+<li><strong>Provide actionable insights</strong> to maintain project health.</li>
+</ul>
+<p>To get started, visit our <a href="https://openpathfinder.com/docs/getting-started">Getting Started Guide</a>. Whether you’re an experienced developer or just exploring new technologies, you’ll find everything you need to set up your environment and begin working with OpenPathfinder.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="visionboard">VisionBoard<a href="https://openpathfinder.com/blog/welcome#visionboard" class="hash-link" aria-label="Direct link to VisionBoard" title="Direct link to VisionBoard">​</a></h2>
+<p><strong><a href="https://openpathfinder.com/docs/visionBoard/">VisionBoard</a></strong> is a CLI tool that can query and store information from external resources about your project and perform complex analysis against compliance rules, this helps organizations transform raw data into actionable insights. <a href="https://openpathfinder.com/docs/history">Created to support the OpenJS Foundation projects</a>, it simplifies the complex task of monitoring security and operational health. Here are a few highlights:</p>
+<ul>
+<li><strong>Customizable <a href="https://openpathfinder.com/docs/visionBoard/Checks">Checks</a> and <a href="https://openpathfinder.com/docs/visionBoard/checklists">Checklists</a>:</strong> Automates compliance with security standards, such as <a href="https://openpathfinder.com/docs/visionBoard/checklists#official-checklists">the OpenJS Security Compliance Guide</a>. Offers flexibility to define checks tailored to your project needs.</li>
+<li><strong>Integration with tools:</strong> Connects to <a href="https://openpathfinder.com/docs/visionBoard/providers#github-api">GitHub APIs</a>, <a href="https://openpathfinder.com/docs/visionBoard/providers#ossf-scorecard">OSSF Scorecard</a>, and other external sources to enrich and analyze data. This ensures up-to-date and comprehensive insights.</li>
+<li><strong>Intuitive dashboards:</strong> Offers visual insights into the state of your projects, making it easier to identify trends, risks, and areas for improvement.</li>
+</ul>
+<p>By focusing on <strong>planning</strong> and <strong>clarity</strong>, VisionBoard helps keep your entire team aligned and moving forward together.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fortsphere">FortSphere<a href="https://openpathfinder.com/blog/welcome#fortsphere" class="hash-link" aria-label="Direct link to FortSphere" title="Direct link to FortSphere">​</a></h2>
+<p><a href="https://openpathfinder.com/docs/fortSphere">FortSphere</a> is a community-driven, open source CLI tool crafted with love by maintainers for maintainers. It empowers you to secure and streamline your GitHub organizations and repositories, ensuring you’re always in control. Here are some highlights:</p>
+<ul>
+<li><strong>Your tokens and data stay local:</strong> All operations are performed locally—your sensitive information never leaves your machine.</li>
+<li><strong>No blind trust required:</strong> As an open source project, you don’t need to trust others—just the transparent and collaborative efforts of its contributors.</li>
+<li><strong>Centralized policy management:</strong> Apply security and operational <a href="https://openpathfinder.com/docs/fortSphere/policies">policies</a> across all your GitHub organizations with one command.</li>
+<li><strong>Real-Time checks and updates:</strong> Detect non-compliant configurations and resolve them automatically.</li>
+<li><strong>Customizable policies:</strong> Choose from a suite of predefined policies or create your own.</li>
+</ul>
+<p>By focusing on <strong>transparency</strong> and <strong>modularity</strong>, FortSphere empowers OSS Maintainers to improve the security posture for their projects easily.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="watch-the-demo">Watch the Demo<a href="https://openpathfinder.com/blog/welcome#watch-the-demo" class="hash-link" aria-label="Direct link to Watch the Demo" title="Direct link to Watch the Demo">​</a></h2>
+<p>In this video, you’ll see how seamlessly VisionBoard and fortSphere integrate and how OSS Maintainers can use checks and policies to detect and mitigate security flaws.</p>
+<div class="iframe-container"><iframe src="https://www.youtube.com/embed/gf3BcLS_dXw" title="OpenPathfinder demo (visionBoard + fortSphere)" frameborder="0"></iframe></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="explore-our-journey">Explore our journey<a href="https://openpathfinder.com/blog/welcome#explore-our-journey" class="hash-link" aria-label="Direct link to Explore our journey" title="Direct link to Explore our journey">​</a></h2>
+<p>Curious how OpenPathfinder came to be? Our roots can be traced through the <a href="https://openpathfinder.com/docs/history">History</a> page, where we highlight major milestones and the long journey that started in 2024 with the creation of the <a href="http://localhost:3000/docs/history#1-initiate-development-of-security-program-standards-for-openjs-projects-feb-2024" target="_blank" rel="noopener noreferrer">Security Program Standards for the OpenJS Foundation</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="get-involved">Get Involved<a href="https://openpathfinder.com/blog/welcome#get-involved" class="hash-link" aria-label="Direct link to Get Involved" title="Direct link to Get Involved">​</a></h2>
+<p>We invite you to join the OpenPathfinder journey. Here are some ways to get started:</p>
+<ol>
+<li><strong>Explore the Docs</strong>: Get an overview of <a href="https://openpathfinder.com/docs/visionBoard/">VisionBoard</a>, <a href="https://openpathfinder.com/docs/fortSphere">FortSphere</a>, and other modules. You can also visit our <a href="https://openpathfinder.com/docs/getting-started">Getting Started Guide</a> for setup instructions.</li>
+<li><strong>Contribute</strong>: Check out our <a href="https://openpathfinder.com/contribute">Contribute</a> page to learn how to report issues, request features, and submit pull requests.</li>
+<li><strong>Support</strong>: If you’d like to go the extra mile, visit our <a href="https://openpathfinder.com/support">Support</a> page to see how you can help sustain the project.</li>
+<li><strong>Stay Updated</strong>: Follow this blog for the latest news, tutorials, and community highlights.</li>
+</ol>
+<blockquote>
+<p>Thank you for stopping by, and we look forward to building an amazing open source ecosystem together!<br>
+<!-- -->— Ulises Gascón</p>
+</blockquote>]]></content:encoded>
         </item>
     </channel>
 </rss>
