@@ -47,7 +47,7 @@ To use visionBoard via Docker:
 3. (Optional) Create an alias for convenience:
 
    ```bash
-   alias visionBoard="docker run --rm ghcr.io/openpathfinder/visionBoard:latest"
+   alias visionBoard="docker run --rm ghcr.io/openpathfinder/visionboard:latest"
    ```
 
 ## From Source Code
