@@ -17,8 +17,6 @@ Here are examples of workflows that use this provider:
 
 ## OSSF Scorecard
 
-The [OSSF Scorecard](https://scorecard.dev/) is included in VisionBoard for analyzing repository health and security. The analysis runs locally using [child processes](https://nodejs.org/api/child_process.html) and containers in parallel. Results are stored in the database for efficient access and fast queries via [reports](/docs/visionBoard/report-management).
-
-For detailed insights, refer to the Scorecard table available on project pages. This table includes repository names, commit hashes, analysis duration (in seconds), dates, and security scores for each repository.
+The [OSSF Scorecard](https://scorecard.dev/) is included in VisionBoard for analyzing repository health and security. The analysis runs locally using [child processes](https://nodejs.org/api/child_process.html) and containers in parallel when executing the workflow: `visionboard workflow run --name upsert-ossf-scorecard`. Results are stored in the database for efficient access and fast queries via [reports](/docs/visionBoard/report-management).
 
 ![OSSF Scorecard Analysis table displaying repositories, commit hashes, analysis duration (in seconds), date, and scores for six OpenPathfinder repositories.](/img/visionBoard_project_report_detials_ossf_scorecard.png)
