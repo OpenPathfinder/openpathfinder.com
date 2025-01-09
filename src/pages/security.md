@@ -8,7 +8,7 @@ We take security vulnerabilities seriously and appreciate your efforts to respon
 
 If you discover a security vulnerability, it is crucial that you **do not create a public issue** under any circumstances. Public issues can inadvertently expose the vulnerability, potentially leading to exploitation before a fix is available.
 
-Instead, please report the vulnerability via the [GitHub Security Advisory](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability) for this repository. This private channel ensures that only the maintainers can access the details of the vulnerability, enabling a timely and secure resolution.
+Instead, please report the vulnerability via the [GitHub Security Advisory](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability) for the relevant repository. This private channel ensures that only the maintainers can access the details of the vulnerability, enabling a timely and secure resolution.
 
 ### Secondary Reporting Option: Email
 If you are unable to use the GitHub Security Advisory for any reason, you may report the issue via email to `ulises@linux.com`.
