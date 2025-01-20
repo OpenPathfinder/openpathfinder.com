@@ -160,7 +160,7 @@ Follow these steps to implement compliance checks:
   - Add integration test cases for the check.
   - Verify all tests pass.
   - Run `check run --name {check_code_name}` and verify database changes. Update the seed script if necessary (`npm run db:seed`).
-- **5. Update the Website ([Example](https://github.com/OpenPathfinder/website/pull/9)):**
-  - Review content at `https://openjs-security-program-standards.netlify.app/details/{check_code_name}`.
+- **5. Update the Website ([Example](https://github.com/OpenPathfinder/openpathfinder.com/pull/20)):**
+  - Review content at `https://openpathfinder.com/docs/checks/{check_code_name}`.
   - Create a PR to include check calculation details and mitigation information.
 
