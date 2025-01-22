@@ -12,7 +12,6 @@ While you can use checks individually, most users prefer to group them into [Che
 Explore the full list of available checks below:
 
 <!-- LIST:START -->
-- **[owaspTop10Training](/docs/checks/owaspTop10Training)**: Training on OWASP Top 10 or equivalent 
 - **[npmOrgMFA](/docs/checks/npmOrgMFA)**: Enforce MFA in npm organization(s) 
 - **[orgToolingMFA](/docs/checks/orgToolingMFA)**: Enforce MFA in all the tools 
 - **[MFAImpersonationDefense](/docs/checks/MFAImpersonationDefense)**: Use MFA against impersonation 
@@ -84,4 +83,5 @@ Explore the full list of available checks below:
 - **[githubOrgMFA](/docs/checks/githubOrgMFA)**: Enforce MFA in GitHub organization(s) 
 - **[softwareDesignTraining](/docs/checks/softwareDesignTraining)**: Training on secure software design 
 - **[adminRepoCreationOnly](/docs/checks/adminRepoCreationOnly)**: Allow only admins to create public repositories 
+- **[owaspTop10Training](/docs/checks/owaspTop10Training)**: Training on OWASP Top 10 or equivalent 
 <!-- LIST:END -->

@@ -1,27 +1,5 @@
 [
   {
-    "id": 2,
-    "title": "Training on OWASP Top 10 or equivalent",
-    "description": "At least one primary maintainer has taken the training on OWASP Top 10 or Equivalent",
-    "default_section_number": "7",
-    "default_section_name": "code quality",
-    "code_name": "owaspTop10Training",
-    "default_priority_group": "P0",
-    "is_c_scrm": false,
-    "mitre_url": "https://attack.mitre.org/mitigations/M1013/",
-    "mitre_description": "M1013",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.know_common_errors",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [know_common_errors]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/owaspTop10Training",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
-  },
-  {
     "id": 4,
     "title": "Enforce MFA in npm organization(s)",
     "description": "Multi Factor Authentication (MFA) enforced across the npm organization(s)",
@@ -40,8 +18,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/npmOrgMFA",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 5,
@@ -62,8 +40,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/orgToolingMFA",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 6,
@@ -84,8 +62,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/MFAImpersonationDefense",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 7,
@@ -106,8 +84,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/noSensitiveInfoInRepositories",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 8,
@@ -128,8 +106,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/injectedSecretsAtRuntime",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 9,
@@ -150,8 +128,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/scanCommitsForSensitiveInfo",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 10,
@@ -172,8 +150,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/preventLandingSensitiveCommits",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 11,
@@ -194,8 +172,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/SSHKeysRequired",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 12,
@@ -216,8 +194,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/npmPublicationMFA",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 13,
@@ -238,8 +216,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/githubWebhookSecrets",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 67,
@@ -260,8 +238,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/requireCodeOwnersReviewForLargeTeams",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 14,
@@ -282,8 +260,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/restrictedOrgPermissions",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 16,
@@ -304,8 +282,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/preventBranchProtectionBypass",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 17,
@@ -326,8 +304,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/defineFunctionalRoles",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 18,
@@ -348,8 +326,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/githubWriteAccessRoles",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 19,
@@ -370,8 +348,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/twoOrMoreOwnersForAccess",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 20,
@@ -392,8 +370,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/patchCriticalVulns30Days",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 21,
@@ -414,8 +392,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/patchNonCriticalVulns90Days",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 22,
@@ -436,8 +414,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/automateVulnDetection",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 23,
@@ -458,8 +436,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/staticCodeAnalysis",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 24,
@@ -480,8 +458,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/resolveLinterWarnings",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 25,
@@ -502,8 +480,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/staticAppSecTesting",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 26,
@@ -524,8 +502,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/commitStatusChecks",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 27,
@@ -546,8 +524,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/securityMdMeetsOpenJSCVD",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 28,
@@ -568,8 +546,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/useCVDToolForVulns",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 29,
@@ -590,8 +568,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/vulnResponse14Days",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 30,
@@ -612,8 +590,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/incidentResponsePlan",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 31,
@@ -634,8 +612,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/assignCVEForKnownVulns",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 32,
@@ -656,8 +634,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/includeCVEInReleaseNotes",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 33,
@@ -678,8 +656,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/regressionTestsForVulns",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 34,
@@ -700,8 +678,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/defaultTokenPermissionsReadOnly",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 35,
@@ -722,8 +700,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/blockWorkflowPRApproval",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 36,
@@ -744,8 +722,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/noForcePushDefaultBranch",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 37,
@@ -766,8 +744,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/preventDeletionDefaultBranch",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 38,
@@ -788,8 +766,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/upToDateDefaultBranchBeforeMerge",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 39,
@@ -810,8 +788,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/restrictOrgSecrets",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 40,
@@ -832,8 +810,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/verifiedActionsOnly",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 41,
@@ -854,8 +832,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/noSelfHostedRunners",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 42,
@@ -876,8 +854,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/noArbitraryCodeInPipeline",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 43,
@@ -898,8 +876,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/limitWorkflowWritePermissions",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 44,
@@ -920,8 +898,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/preventScriptInjection",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 45,
@@ -942,8 +920,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/consistentBuildProcessDocs",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 46,
@@ -964,8 +942,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/upgradePathDocs",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 47,
@@ -986,8 +964,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/softwareArchitectureDocs",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 48,
@@ -1008,8 +986,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/ciAndCdPipelineAsCode",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 49,
@@ -1030,8 +1008,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/pinActionsToSHA",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 50,
@@ -1052,8 +1030,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/automateDependencyManagement",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 51,
@@ -1074,8 +1052,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/machineReadableDependencies",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 52,
@@ -1096,8 +1074,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/identifyModifiedDependencies",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 53,
@@ -1118,8 +1096,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/annualDependencyRefresh",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 54,
@@ -1140,8 +1118,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/useHwKeyGithubAccess",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 55,
@@ -1162,8 +1140,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/useHwKeyGithubNonInteractive",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 56,
@@ -1184,8 +1162,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/useHwKeyOtherContexts",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 57,
@@ -1206,8 +1184,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/forkWorkflowApproval",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 58,
@@ -1228,8 +1206,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/workflowSecurityScanner",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 59,
@@ -1250,8 +1228,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/runnerSecurityScanner",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 60,
@@ -1272,8 +1250,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/activeAdminsSixMonths",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 61,
@@ -1294,8 +1272,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/activeWritersSixMonths",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 62,
@@ -1316,8 +1294,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/PRsBeforeMerge",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 63,
@@ -1338,8 +1316,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/commitSignoffForWeb",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 64,
@@ -1360,8 +1338,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/requireSignedCommits",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 65,
@@ -1382,8 +1360,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/includePackageLock",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 66,
@@ -1404,8 +1382,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/requireTwoPartyReview",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 68,
@@ -1426,8 +1404,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/requirePRApprovalForMainline",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 69,
@@ -1448,8 +1426,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/limitOrgOwners",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 70,
@@ -1470,8 +1448,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/limitRepoAdmins",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 71,
@@ -1492,8 +1470,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/patchExploitableHighVulns14Days",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 72,
@@ -1514,8 +1492,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/patchExploitableNoncCriticalVulns60Days",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 3,
@@ -1536,8 +1514,8 @@
     "implementation_type": "computed",
     "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/43",
     "details_url": "https://openpathfinder.com/docs/checks/githubOrgMFA",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 1,
@@ -1558,8 +1536,8 @@
     "implementation_type": "manual",
     "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/52",
     "details_url": "https://openpathfinder.com/docs/checks/softwareDesignTraining",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   },
   {
     "id": 15,
@@ -1580,7 +1558,29 @@
     "implementation_type": "computed",
     "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/75",
     "details_url": "https://openpathfinder.com/docs/checks/adminRepoCreationOnly",
-    "created_at": "2025-01-03T16:15:48.371Z",
-    "updated_at": "2025-01-03T16:15:48.371Z"
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
+  },
+  {
+    "id": 2,
+    "title": "Training on OWASP Top 10 or equivalent",
+    "description": "At least one primary maintainer has taken the training on OWASP Top 10 or Equivalent",
+    "default_section_number": "7",
+    "default_section_name": "code quality",
+    "code_name": "owaspTop10Training",
+    "default_priority_group": "P0",
+    "is_c_scrm": false,
+    "mitre_url": "https://attack.mitre.org/mitigations/M1013/",
+    "mitre_description": "M1013",
+    "how_to_url": null,
+    "how_to_description": null,
+    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.know_common_errors",
+    "sources_description": "OpenSSF Best Practices Badge Passing Level [know_common_errors]",
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/63",
+    "details_url": "https://openpathfinder.com/docs/checks/owaspTop10Training",
+    "created_at": "2025-01-22T20:35:23.297Z",
+    "updated_at": "2025-01-22T20:35:23.297Z"
   }
 ]
