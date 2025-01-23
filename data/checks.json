@@ -1,553 +1,47 @@
 [
   {
-    "id": 4,
-    "title": "Enforce MFA in npm organization(s)",
-    "description": "Multi Factor Authentication (MFA) enforced across the npm organization(s)",
+    "id": 54,
+    "title": "Use AAL2/3 passkeys for GitHub access",
+    "description": "Ensure GitHub access utilizes a passkey (AAL2) or hardware key (AAL3) activated by a password or biometrics",
     "default_section_number": "1",
     "default_section_name": "user authentication",
-    "code_name": "npmOrgMFA",
-    "default_priority_group": "P1",
+    "code_name": "useHwKeyGithubAccess",
+    "default_priority_group": "R1",
     "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/308.html",
-    "mitre_description": "CWE-308",
-    "how_to_url": "https://docs.npmjs.com/requiring-two-factor-authentication-in-your-organization",
-    "how_to_description": "npm Docs",
-    "sources_url": "https://github.com/ossf/package-manager-best-practices/blob/main/published/npm.md",
-    "sources_description": "OpenSSF npm Best Practices",
     "implementation_status": "pending",
     "implementation_type": null,
     "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/npmOrgMFA",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 5,
-    "title": "Enforce MFA in all the tools",
-    "description": "Multi Factor Authentication (MFA) enforced in all tools wherever technically feasible",
-    "default_section_number": "1",
-    "default_section_name": "user authentication",
-    "code_name": "orgToolingMFA",
-    "default_priority_group": "P1",
-    "is_c_scrm": false,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/308.html",
-    "mitre_description": "CWE-308",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md",
-    "sources_description": "CNCF CNSWP v1.0",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/orgToolingMFA",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 6,
-    "title": "Use MFA against impersonation",
-    "description": "Use Multi Factor Authentication (MFA) methods that defend against impersonation when available ",
-    "default_section_number": "1",
-    "default_section_name": "user authentication",
-    "code_name": "MFAImpersonationDefense",
-    "default_priority_group": "P1",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/290.html",
-    "mitre_description": "CWE-290",
-    "how_to_url": "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://www.bestpractices.dev/en/criteria/2#2.secure_2FA",
-    "sources_description": "OpenSSF Best Practices Badge Gold Level [secure_2FA]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/MFAImpersonationDefense",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 7,
-    "title": "Check sensitive information",
-    "description": "No secrets or credentials are included in the source code",
-    "default_section_number": "3",
-    "default_section_name": "service authentication",
-    "code_name": "noSensitiveInfoInRepositories",
-    "default_priority_group": "P2",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/540.html",
-    "mitre_description": "CWE-540",
-    "how_to_url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://www.bestpractices.dev/en/criteria#0.no_leaked_credentials",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [no_leaked_credentials]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/noSensitiveInfoInRepositories",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 8,
-    "title": "Ensure that the secrets are injected at runtime",
-    "description": "Secrets are injected at runtime, such as environment variables or as a file (eg: use Github Secrets)",
-    "default_section_number": "3",
-    "default_section_name": "service authentication",
-    "code_name": "injectedSecretsAtRuntime",
-    "default_priority_group": "P2",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/538.html",
-    "mitre_description": "CWE-538",
-    "how_to_url": "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-an-organization",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#secrets-encryption",
-    "sources_description": "CNCF CNSWP 2.0 #195",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/injectedSecretsAtRuntime",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 9,
-    "title": "Ensure that all the commits are scanned",
-    "description": "All commits are scanned for secrets and credentials ",
-    "default_section_number": "7",
-    "default_section_name": "code quality",
-    "code_name": "scanCommitsForSensitiveInfo",
-    "default_priority_group": "P2",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/540.html",
-    "mitre_description": "CWE-540",
-    "how_to_url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fnref-21-4e56305414bd02da4843ec1d7d856144",
-    "sources_description": "CNCF SSCP v1.0 #184",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/scanCommitsForSensitiveInfo",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 10,
-    "title": "Block new commits with secrets or credentials",
-    "description": "New commits containing secrets or credentials are blocked from merging",
-    "default_section_number": "7",
-    "default_section_name": "code quality",
-    "code_name": "preventLandingSensitiveCommits",
-    "default_priority_group": "P2",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/358.html",
-    "mitre_description": "CWE-358",
-    "how_to_url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://www.bestpractices.dev/en/criteria#0.no_leaked_credentials",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [no_leaked_credentials]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/preventLandingSensitiveCommits",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 11,
-    "title": "Use SSH keys with passphrases for repository access",
-    "description": "Use SSH keys for developer access to source code repositories and use a passphrase",
-    "default_section_number": "1",
-    "default_section_name": "user authentication",
-    "code_name": "SSHKeysRequired",
-    "default_priority_group": "P3",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/309.html",
-    "mitre_description": "CWE-309",
-    "how_to_url": "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#use-ssh-keys-to-provide-developers-access-to-source-code-repositories",
-    "sources_description": "CNCF SSCP v1.0 #192",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/SSHKeysRequired",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 12,
-    "title": "Publish to npm using MFA-Enabled accounts",
-    "description": "Publish to npm using an MFA-enabled account rather than single factor legacy or granular access tokens",
-    "default_section_number": "3",
-    "default_section_name": "service authentication",
-    "code_name": "npmPublicationMFA",
-    "default_priority_group": "P3",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/308.html",
-    "mitre_description": "CWE-308",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://docs.npmjs.com/creating-and-viewing-access-tokens",
-    "sources_description": "npm Docs",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/npmPublicationMFA",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 13,
-    "title": "Secure GitHub Webhooks with secrets",
-    "description": "Ensure that Github Webhooks use secrets",
-    "default_section_number": "3",
-    "default_section_name": "service authentication",
-    "code_name": "githubWebhookSecrets",
-    "default_priority_group": "P3",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/306",
-    "mitre_description": "CWE-306",
-    "how_to_url": "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#webhooks",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/githubWebhookSecrets",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 67,
-    "title": "Require code owners review",
-    "description": "Require code owners review",
-    "default_section_number": "8",
-    "default_section_name": "code review",
-    "code_name": "requireCodeOwnersReviewForLargeTeams",
-    "default_priority_group": "R6",
-    "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/670.html",
-    "mitre_description": "CAPEC-670",
-    "how_to_url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#code-review",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/requireCodeOwnersReviewForLargeTeams",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 14,
-    "title": "Restrict default GitHub Org member permissions",
-    "description": "Default GitHub organization member permissions should be restricted",
-    "default_section_number": "2",
-    "default_section_name": "user account permissions",
-    "code_name": "restrictedOrgPermissions",
-    "default_priority_group": "P4",
-    "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/180.html",
-    "mitre_description": "CAPEC-180",
-    "how_to_url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/setting-base-permissions-for-an-organization",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://best.openssf.org/SCM-BestPractices/github/organization/default_repository_permission_is_not_none.html",
-    "sources_description": "OpenSSF SCM Best Practices",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/restrictedOrgPermissions",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 16,
-    "title": "Prevent admins from bypassing branch protection",
-    "description": "Do not allow admins to bypass branch protection settings",
-    "default_section_number": "2",
-    "default_section_name": "user account permissions",
-    "code_name": "preventBranchProtectionBypass",
-    "default_priority_group": "P4",
-    "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/122.html",
-    "mitre_description": "CAPEC-122",
-    "how_to_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#do-not-allow-bypassing-the-above-settings",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
-    "sources_description": "Github Supply Chain Security Best Practices",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/preventBranchProtectionBypass",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 17,
-    "title": "Define roles aligned to functional responsibilities",
-    "description": "Define roles aligned to functional responsibilities",
-    "default_section_number": "2",
-    "default_section_name": "user account permissions",
-    "code_name": "defineFunctionalRoles",
-    "default_priority_group": "P4",
-    "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/122.html",
-    "mitre_description": "CAPEC-122",
-    "how_to_url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#define-roles-aligned-to-functional-responsibilities",
-    "sources_description": "CNCF SSCP v1.0 #188",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/defineFunctionalRoles",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 18,
-    "title": "Define teams/individuals with write access to repositories",
-    "description": "Define individuals/teams who write access to a GitHub Repository",
-    "default_section_number": "2",
-    "default_section_name": "user account permissions",
-    "code_name": "githubWriteAccessRoles",
-    "default_priority_group": "P4",
-    "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/180.html",
-    "mitre_description": "CAPEC-180",
-    "how_to_url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#define-individualsteams-that-are-responsible-for-code-in-a-repository-and-associated-coding-conventions",
-    "sources_description": "CNCF SSCP v1.0 #185",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/githubWriteAccessRoles",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 19,
-    "title": "Configure two or more owners for access continuity",
-    "description": "Have at least two owners configured for access continuity",
-    "default_section_number": "2",
-    "default_section_name": "user account permissions",
-    "code_name": "twoOrMoreOwnersForAccess",
-    "default_priority_group": "P4",
-    "is_c_scrm": true,
-    "mitre_url": "https://attack.mitre.org/mitigations/M1026/",
-    "mitre_description": "M1026",
-    "how_to_url": "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/maintaining-ownership-continuity-for-your-organization",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.access_continuity",
-    "sources_description": "OpenSSF Best Practices Badge Silver Level [access_continuity]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/twoOrMoreOwnersForAccess",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 20,
-    "title": "Patch actively exploited critical vulnerabilities within 30 Days",
-    "description": "Actively exploited critical vulnerabilities patched within 30 Days",
-    "default_section_number": "5",
-    "default_section_name": "vulnerability management",
-    "code_name": "patchCriticalVulns30Days",
-    "default_priority_group": "P5",
-    "is_c_scrm": false,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria#0.vulnerabilities_critical_fixed",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [vulnerabilities_critical_fixed]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/patchCriticalVulns30Days",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 21,
-    "title": "Patch non-critical vulnerabilities within 90 days",
-    "description": "Ensure non-critical exploitable vulnerabilities are patched within 90 days",
-    "default_section_number": "5",
-    "default_section_name": "vulnerability management",
-    "code_name": "patchNonCriticalVulns90Days",
-    "default_priority_group": "P5",
-    "is_c_scrm": false,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://googleprojectzero.blogspot.com/p/vulnerability-disclosure-policy.html",
-    "sources_description": "Google Project Zero Vulnerability Disclosure Policy",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/patchNonCriticalVulns90Days",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 22,
-    "title": "Automate dependency vulnerability identification",
-    "description": "Implement an automated process to identify dependencies with publicly disclosed vulnerabilities",
-    "default_section_number": "11",
-    "default_section_name": "dependency management",
-    "code_name": "automateVulnDetection",
-    "default_priority_group": "P6",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/1395.html",
-    "mitre_description": "CWE-1395",
-    "how_to_url": "https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates#managing-dependabot-security-updates-for-your-repositories",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://scvs.owasp.org/scvs/v5-component-analysis/",
-    "sources_description": "OWASP SCVS L1 5.4",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/automateVulnDetection",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 23,
-    "title": "Use automated static code analysis tools",
-    "description": "Implement automated static code analysis tools (e.g., ESLint)",
-    "default_section_number": "7",
-    "default_section_name": "code quality",
-    "code_name": "staticCodeAnalysis",
-    "default_priority_group": "P6",
-    "is_c_scrm": false,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/1076.html",
-    "mitre_description": "CWE-1076",
-    "how_to_url": "https://eslint.org/docs/latest/use/getting-started#installation-and-usage",
-    "how_to_description": "ESLint Docs",
-    "sources_url": "https://scvs.owasp.org/scvs/v5-component-analysis/",
-    "sources_description": "OWASP SCVS L1 5.1",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/staticCodeAnalysis",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 24,
-    "title": "Address compiler and linter warnings before merging",
-    "description": "Ensure all compiler and linter warnings are resolved before merging",
-    "default_section_number": "7",
-    "default_section_name": "code quality",
-    "code_name": "resolveLinterWarnings",
-    "default_priority_group": "P6",
-    "is_c_scrm": false,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/1127.html",
-    "mitre_description": "CWE-1127",
-    "how_to_url": "https://eslint.org/docs/latest/use/getting-started#installation-and-usage",
-    "how_to_description": "ESLint Docs",
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.warnings_strict",
-    "sources_description": "OpenSSF Best Practices Badge Silver Level [warnings_strict]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/resolveLinterWarnings",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 25,
-    "title": "Use static application security testing for all commits",
-    "description": "Ensure all commits are scanned by a static application security testing tool",
-    "default_section_number": "7",
-    "default_section_name": "code quality",
-    "code_name": "staticAppSecTesting",
-    "default_priority_group": "P6",
-    "is_c_scrm": false,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/1076.html",
-    "mitre_description": "CWE-1076",
-    "how_to_url": "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql",
-    "how_to_description": "CodeQL Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#sast",
-    "sources_description": "OWASP SCVS L1 6.6OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/staticAppSecTesting",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 26,
-    "title": "Require commit status checks to pass before merging",
-    "description": "Ensure all required commit status checks pass before merging",
-    "default_section_number": "7",
-    "default_section_name": "code quality",
-    "code_name": "commitStatusChecks",
-    "default_priority_group": "P6",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/358.html",
-    "mitre_description": "CWE-358",
-    "how_to_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/commitStatusChecks",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 27,
-    "title": "Ensure Security.md meets OpenJS CVD guidelines",
-    "description": "Verify that Security.md complies with OpenJS CVD guidelines",
-    "default_section_number": "6",
-    "default_section_name": "coordinated vulnerability disclosure",
-    "code_name": "securityMdMeetsOpenJSCVD",
-    "default_priority_group": "P7",
-    "is_c_scrm": false,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#security-policy",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/securityMdMeetsOpenJSCVD",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 28,
-    "title": "Use CVD tools to manage vulnerability reports",
-    "description": "Ensure the project utilizes a CVD tool to privately receive and manage external vulnerability reports (e.g., HackerOne, GitHub PVR)",
-    "default_section_number": "6",
-    "default_section_name": "coordinated vulnerability disclosure",
-    "code_name": "useCVDToolForVulns",
-    "default_priority_group": "P7",
-    "is_c_scrm": false,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": "https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/configuring-private-vulnerability-reporting-for-an-organization",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.vulnerability_report_private",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [vulnerability_report_private]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/useCVDToolForVulns",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
+    "details_url": "https://openpathfinder.com/docs/checks/useHwKeyGithubAccess",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/308.html",
+          "name": "CWE-308"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1032/",
+          "name": "M1032"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-passkey",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/great-mfa-project/blob/main/security-rationale.md",
+          "name": "OpenSSF Great MFA Project Security Rationale"
+        },
+        {
+          "url": "https://www.nist.gov/blogs/cybersecurity-insights/giving-nist-digital-identity-guidelines-boost-supplement-incorporating",
+          "name": "NIST SP 800-63Bsup1"
+        }
+      ]
+    }
   },
   {
     "id": 29,
@@ -558,898 +52,22 @@
     "code_name": "vulnResponse14Days",
     "default_priority_group": "P7",
     "is_c_scrm": false,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria#0.vulnerability_report_response",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [vulnerability_report_response]",
     "implementation_status": "pending",
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/vulnResponse14Days",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 30,
-    "title": "Define clear communication and incident response plans",
-    "description": "Establish clear communication and incident response plans",
-    "default_section_number": "6",
-    "default_section_name": "coordinated vulnerability disclosure",
-    "code_name": "incidentResponsePlan",
-    "default_priority_group": "P7",
-    "is_c_scrm": false,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://best.openssf.org/SCM-BestPractices/#operations",
-    "sources_description": "OpenSSF SCM Best Practices",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/incidentResponsePlan",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 31,
-    "title": "Assign CVEs to all known security vulnerabilities",
-    "description": "Ensure all known security vulnerabilities are issued a CVE",
-    "default_section_number": "6",
-    "default_section_name": "coordinated vulnerability disclosure",
-    "code_name": "assignCVEForKnownVulns",
-    "default_priority_group": "P7",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.release_notes_vulns",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [release_notes_vulns]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/assignCVEForKnownVulns",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 32,
-    "title": "Include CVE IDs in release notes for security fixes",
-    "description": "Ensure release notes include the CVE ID for patched security vulnerabilities",
-    "default_section_number": "6",
-    "default_section_name": "coordinated vulnerability disclosure",
-    "code_name": "includeCVEInReleaseNotes",
-    "default_priority_group": "P7",
-    "is_c_scrm": false,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.release_notes_vulns",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [release_notes_vulns]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/includeCVEInReleaseNotes",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 33,
-    "title": "Create regression tests for bugs and security vulnerabilities",
-    "description": "Ensure regression tests cover at least 50% of bugs and 100% of security vulnerabilities",
-    "default_section_number": "7",
-    "default_section_name": "code quality",
-    "code_name": "regressionTestsForVulns",
-    "default_priority_group": "P8",
-    "is_c_scrm": false,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.regression_tests_added50",
-    "sources_description": "OpenSSF Best Practices Badge Silver Level [regression_tests_added50]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/regressionTestsForVulns",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 34,
-    "title": "Set default GitHub workflow token permissions to read-only",
-    "description": "Ensure GitHub organization default workflow token permissions are set to read-only",
-    "default_section_number": "4",
-    "default_section_name": "github workflow permissions",
-    "code_name": "defaultTokenPermissionsReadOnly",
-    "default_priority_group": "P9",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/250.html",
-    "mitre_description": "CWE-250",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": null,
-    "sources_description": null,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/defaultTokenPermissionsReadOnly",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 35,
-    "title": "Prevent workflows from creating or approving PRs",
-    "description": "Ensure workflows are not allowed to create or approve pull requests",
-    "default_section_number": "4",
-    "default_section_name": "github workflow permissions",
-    "code_name": "blockWorkflowPRApproval",
-    "default_priority_group": "P9",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/250.html",
-    "mitre_description": "CWE-250",
-    "how_to_url": "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#preventing-github-actions-from-creating-or-approving-pull-requests",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/blockWorkflowPRApproval",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 36,
-    "title": "Disable force push on default branch",
-    "description": "Ensure force push is disabled on the default branch",
-    "default_section_number": "9",
-    "default_section_name": "source control",
-    "code_name": "noForcePushDefaultBranch",
-    "default_priority_group": "P9",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/noForcePushDefaultBranch",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 37,
-    "title": "Prevent deletion of default branch",
-    "description": "Ensure the default branch cannot be deleted",
-    "default_section_number": "9",
-    "default_section_name": "source control",
-    "code_name": "preventDeletionDefaultBranch",
-    "default_priority_group": "P9",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/267.html",
-    "mitre_description": "CWE-267",
-    "how_to_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/preventDeletionDefaultBranch",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 38,
-    "title": "Require default branch updates before merging",
-    "description": "Ensure the default branch is up to date before allowing merges",
-    "default_section_number": "9",
-    "default_section_name": "source control",
-    "code_name": "upToDateDefaultBranchBeforeMerge",
-    "default_priority_group": "P9",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/upToDateDefaultBranchBeforeMerge",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 39,
-    "title": "Restrict GitHub organization secrets to specific repositories",
-    "description": "Limit GitHub organization secrets to only be accessible by selected repositories",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "restrictOrgSecrets",
-    "default_priority_group": "P10",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/250.html",
-    "mitre_description": "CWE-250",
-    "how_to_url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#managing-github-actions-permissions-for-your-repository",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://best.openssf.org/SCM-BestPractices/github/actions/all_repositories_can_run_github_actions.html",
-    "sources_description": "OpenSSF SCM Best Practices",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/restrictOrgSecrets",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 40,
-    "title": "Limit GitHub Actions to verified or trusted actions",
-    "description": "Ensure GitHub Actions are limited to verified or explicitly trusted actions",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "verifiedActionsOnly",
-    "default_priority_group": "P10",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/1357.html",
-    "mitre_description": "CWE-1357",
-    "how_to_url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-select-actions-and-reusable-workflows-to-run",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://best.openssf.org/SCM-BestPractices/github/actions/all_github_actions_are_allowed.html",
-    "sources_description": "OpenSSF SCM Best Practices",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/verifiedActionsOnly",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 41,
-    "title": "Disable self-hosted runners in GitHub organization",
-    "description": "Ensure the use of self-hosted runners is disabled in the GitHub organization",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "noSelfHostedRunners",
-    "default_priority_group": "P10",
-    "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/439.html",
-    "mitre_description": "CAPEC-439",
-    "how_to_url": "https://docs.github.com/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#limiting-the-use-of-self-hosted-runners",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#hardening-for-self-hosted-runners",
-    "sources_description": "Github Action Hardening Docs",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/noSelfHostedRunners",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 42,
-    "title": "Restrict build pipeline code execution to build scripts",
-    "description": "Ensure the build pipeline cannot execute arbitrary code outside of a build script",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "noArbitraryCodeInPipeline",
-    "default_priority_group": "P11",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/94.html",
-    "mitre_description": "CWE-94",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#dangerous-workflow",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/noArbitraryCodeInPipeline",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 43,
-    "title": "Limit workflow write permissions to job level",
-    "description": "Ensure workflows are granted write permissions only at the job level",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "limitWorkflowWritePermissions",
-    "default_priority_group": "P11",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/250.html",
-    "mitre_description": "CWE-250",
-    "how_to_url": "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/limitWorkflowWritePermissions",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 44,
-    "title": "Avoid script injection from untrusted variables",
-    "description": "Ensure script injection is prevented by avoiding untrusted context variables",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "preventScriptInjection",
-    "default_priority_group": "P11",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/454.html",
-    "mitre_description": "CWE-454",
-    "how_to_url": "https://securitylab.github.com/research/github-actions-untrusted-input/",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#dangerous-workflow",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/preventScriptInjection",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 45,
-    "title": "Document consistent and automated build processes",
-    "description": "Ensure a consistent and automated build process is documented and followed",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "consistentBuildProcessDocs",
-    "default_priority_group": "P12",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/1068.html",
-    "mitre_description": "CWE-1068",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": null,
-    "sources_description": null,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/consistentBuildProcessDocs",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 46,
-    "title": "Support older versions or provide upgrade paths",
-    "description": "Ensure commonly used older versions are supported or an upgrade path is documented and provided",
-    "default_section_number": "5",
-    "default_section_name": "vulnerability management",
-    "code_name": "upgradePathDocs",
-    "default_priority_group": "P12",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.maintenance_or_update",
-    "sources_description": "OpenSSF Best Practices Badge Silver Level [maintenance_or_update]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/upgradePathDocs",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 47,
-    "title": "Document software architecture",
-    "description": "Ensure the software architecture is clearly documented",
-    "default_section_number": "8",
-    "default_section_name": "code review",
-    "code_name": "softwareArchitectureDocs",
-    "default_priority_group": "P12",
-    "is_c_scrm": false,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/1053.html",
-    "mitre_description": "CWE-1053",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.documentation_architecture",
-    "sources_description": "OpenSSF Best Practices Badge Silver Level [documentation_architecture]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/softwareArchitectureDocs",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 48,
-    "title": "Automate CI/CD steps in code-based pipelines",
-    "description": "Ensure all CI/CD steps are automated through pipelines defined as code",
-    "default_section_number": "9",
-    "default_section_name": "source control",
-    "code_name": "ciAndCdPipelineAsCode",
-    "default_priority_group": "P12",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": "https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#build-and-related-continuous-integrationcontinuous-delivery-steps-should-all-be-automated-through-a-pipeline-defined-as-code",
-    "sources_description": "CNCF SSCP 1.0 #158",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/ciAndCdPipelineAsCode",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 49,
-    "title": "Pin actions with secrets to full-length commit SHAs",
-    "description": "Ensure actions with access to secrets are pinned to a full-length commit SHA",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "pinActionsToSHA",
-    "default_priority_group": "P13",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/1357.html",
-    "mitre_description": "CWE-1357",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://securitylab.github.com/research/github-actions-building-blocks/",
-    "sources_description": "Github Docs",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/pinActionsToSHA",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 50,
-    "title": "Automate monitoring of outdated dependencies",
-    "description": "Ensure an automated process is in place to monitor and maintain a list of outdated dependencies",
-    "default_section_number": "10",
-    "default_section_name": "dependency inventory",
-    "code_name": "automateDependencyManagement",
-    "default_priority_group": "P14",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": "https://socket.dev/",
-    "how_to_description": "Socket.Dev",
-    "sources_url": "https://scvs.owasp.org/scvs/v5-component-analysis/",
-    "sources_description": "OWASP SCVS L1 5.7",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/automateDependencyManagement",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 51,
-    "title": "Provide machine-readable dependency lists",
-    "description": "Ensure a machine-readable list of all direct and transitive dependencies is available for the software",
-    "default_section_number": "10",
-    "default_section_name": "dependency inventory",
-    "code_name": "machineReadableDependencies",
-    "default_priority_group": "P14",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security#what-is-the-dependency-graph",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://scvs.owasp.org/scvs/v1-inventory/#verification-requirements",
-    "sources_description": "OWASP SCVS L1 1.3",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/machineReadableDependencies",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 52,
-    "title": "Uniquely identify modified dependencies",
-    "description": "Ensure modified dependencies are uniquely identified and clearly distinguished from the original dependency",
-    "default_section_number": "10",
-    "default_section_name": "dependency inventory",
-    "code_name": "identifyModifiedDependencies",
-    "default_priority_group": "P14",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://scvs.owasp.org/scvs/v6-pedigree-and-provenance/",
-    "sources_description": "OWASP SCVS L2 6.5",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/identifyModifiedDependencies",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 53,
-    "title": "Refresh dependencies with annual releases",
-    "description": "Ensure dependencies are refreshed through a new release at least once annually",
-    "default_section_number": "5",
-    "default_section_name": "vulnerability management",
-    "code_name": "annualDependencyRefresh",
-    "default_priority_group": "P14",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.maintained",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [maintained]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/annualDependencyRefresh",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 54,
-    "title": "Use AAL2/3 passkeys for GitHub access",
-    "description": "Ensure GitHub access utilizes a passkey (AAL2) or hardware key (AAL3) activated by a password or biometrics",
-    "default_section_number": "1",
-    "default_section_name": "user authentication",
-    "code_name": "useHwKeyGithubAccess",
-    "default_priority_group": "R1",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/308.html",
-    "mitre_description": "CWE-308",
-    "how_to_url": "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-passkey",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/great-mfa-project/blob/main/security-rationale.md",
-    "sources_description": "OpenSSF Great MFA Project Security Rationale",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/useHwKeyGithubAccess",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 55,
-    "title": "Use AAL2/3 passkeys for non-interactive GitHub access",
-    "description": "Ensure non-interactive GitHub access uses a passkey (AAL2) or hardware key (AAL3) activated by a password or biometrics",
-    "default_section_number": "1",
-    "default_section_name": "user authentication",
-    "code_name": "useHwKeyGithubNonInteractive",
-    "default_priority_group": "R1",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/308.html",
-    "mitre_description": "CWE-308",
-    "how_to_url": "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key-for-a-hardware-security-key",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/great-mfa-project/blob/main/security-rationale.md",
-    "sources_description": "OpenSSF Great MFA Project Security Rationale",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/useHwKeyGithubNonInteractive",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 56,
-    "title": "Use AAL2/3 passkeys in all other contexts",
-    "description": "Ensure all other contexts use a passkey (AAL2) or hardware key (AAL3) activated by a password or biometrics",
-    "default_section_number": "1",
-    "default_section_name": "user authentication",
-    "code_name": "useHwKeyOtherContexts",
-    "default_priority_group": "R1",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/308.html",
-    "mitre_description": "CWE-308",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://github.com/ossf/great-mfa-project/blob/main/security-rationale.md",
-    "sources_description": "OpenSSF Great MFA Project Security Rationale",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/useHwKeyOtherContexts",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 57,
-    "title": "Require approval for forked workflow changes",
-    "description": "Ensure changes to workflows from forks require approval for all outside collaborators",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "forkWorkflowApproval",
-    "default_priority_group": "R2",
-    "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/180.html",
-    "mitre_description": "CAPEC-180",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#controlling-changes-from-forks-to-workflows-in-public-repositories",
-    "sources_description": "Github Docs",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/forkWorkflowApproval",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 58,
-    "title": "Use workflow security scanners",
-    "description": "Ensure a workflow security scanner is utilized",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "workflowSecurityScanner",
-    "default_priority_group": "R2",
-    "is_c_scrm": true,
-    "mitre_url": "https://attack.mitre.org/mitigations/M1047/",
-    "mitre_description": "M1047",
-    "how_to_url": "https://github.com/step-security/secure-repo",
-    "how_to_description": "Step Security secure-repo",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/workflowSecurityScanner",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 59,
-    "title": "Use GitHub runner security scanners",
-    "description": "Ensure a GitHub runner security scanner is utilized",
-    "default_section_number": "4",
-    "default_section_name": "github workflows",
-    "code_name": "runnerSecurityScanner",
-    "default_priority_group": "R2",
-    "is_c_scrm": true,
-    "mitre_url": "https://attack.mitre.org/mitigations/M1047/",
-    "mitre_description": "M1047",
-    "how_to_url": "https://github.com/step-security/harden-runner",
-    "how_to_description": "Step Security harden-runner",
-    "sources_url": "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#hardening-for-self-hosted-runners",
-    "sources_description": "Github Action Hardening Docs",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/runnerSecurityScanner",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 60,
-    "title": "Require active admins in GitHub organization (activity in 6 months)",
-    "description": "Ensure GitHub organization admins have been active within the last 6 months",
-    "default_section_number": "2",
-    "default_section_name": "user account permissions",
-    "code_name": "activeAdminsSixMonths",
-    "default_priority_group": "R3",
-    "is_c_scrm": true,
-    "mitre_url": "https://attack.mitre.org/mitigations/M1026/",
-    "mitre_description": "M1026",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://best.openssf.org/SCM-BestPractices/github/member/stale_admin_found.html",
-    "sources_description": "OpenSSF SCM Best Practices",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/activeAdminsSixMonths",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 61,
-    "title": "Require active members with write access (activity in 6 months)",
-    "description": "Ensure GitHub organization members with write permissions have been active within the last 6 months",
-    "default_section_number": "2",
-    "default_section_name": "user account permissions",
-    "code_name": "activeWritersSixMonths",
-    "default_priority_group": "R3",
-    "is_c_scrm": true,
-    "mitre_url": "https://attack.mitre.org/mitigations/M1026/",
-    "mitre_description": "M1026",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://best.openssf.org/SCM-BestPractices/github/member/stale_member_found.html",
-    "sources_description": "OpenSSF SCM Best Practices",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/activeWritersSixMonths",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 62,
-    "title": "Require pull requests before merging",
-    "description": "Require pull requests before merging",
-    "default_section_number": "9",
-    "default_section_name": "source control",
-    "code_name": "PRsBeforeMerge",
-    "default_priority_group": "R4",
-    "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/778.html",
-    "mitre_description": "CWE-778",
-    "how_to_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/PRsBeforeMerge",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 63,
-    "title": "Enforce commit sign-off for web based commits",
-    "description": "GitHub org requires commit sign-off for web-based commits",
-    "default_section_number": "9",
-    "default_section_name": "source control",
-    "code_name": "commitSignoffForWeb",
-    "default_priority_group": "R4",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": "https://docs.github.com/en/organizations/managing-organization-settings/managing-the-commit-signoff-policy-for-your-organization#managing-compulsory-commit-signoffs-for-your-organization",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#require-signed-commits",
-    "sources_description": "CNCF SSCP 1.0 #325",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/commitSignoffForWeb",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 64,
-    "title": "Require signed commits",
-    "description": "Require signed commits",
-    "default_section_number": "9",
-    "default_section_name": "source control",
-    "code_name": "requireSignedCommits",
-    "default_priority_group": "R4",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-signed-commits",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#require-signed-commits",
-    "sources_description": "CNCF SSCP 1.0 #325",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/requireSignedCommits",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 65,
-    "title": "Include package-lock.json in releases",
-    "description": "Commit a package-lock.json file with each release",
-    "default_section_number": "10",
-    "default_section_name": "dependency inventory",
-    "code_name": "includePackageLock",
-    "default_priority_group": "R5",
-    "is_c_scrm": true,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": "https://docs.npmjs.com/cli/v10/commands/npm-sbom",
-    "how_to_description": "npm Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#sbom",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/includePackageLock",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 66,
-    "title": "Require two-party review",
-    "description": "Require two party review",
-    "default_section_number": "8",
-    "default_section_name": "code review",
-    "code_name": "requireTwoPartyReview",
-    "default_priority_group": "R6",
-    "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/670.html",
-    "mitre_description": "CAPEC-670",
-    "how_to_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#code-review",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/requireTwoPartyReview",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 68,
-    "title": "Require approved PRs for mainline commits",
-    "description": "Require approved PRs for all commits to mainline branches",
-    "default_section_number": "9",
-    "default_section_name": "source control",
-    "code_name": "requirePRApprovalForMainline",
-    "default_priority_group": "R6",
-    "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/670.html",
-    "mitre_description": "CAPEC-670",
-    "how_to_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
-    "sources_description": "OpenSSF Scorecard",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/requirePRApprovalForMainline",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 69,
-    "title": "Limit GitHub org owners to fewer than three",
-    "description": "Limit the number of GitHub org owners (ideally fewer than three)",
-    "default_section_number": "2",
-    "default_section_name": "user account permissions",
-    "code_name": "limitOrgOwners",
-    "default_priority_group": "R7",
-    "is_c_scrm": true,
-    "mitre_url": "https://attack.mitre.org/mitigations/M1026/",
-    "mitre_description": "M1026",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://best.openssf.org/SCM-BestPractices/github/member/organization_has_too_many_admins.html",
-    "sources_description": "OpenSSF SCM Best Practices",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/limitOrgOwners",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
-  },
-  {
-    "id": 70,
-    "title": "Limit GitHub repo admins to fewer than three",
-    "description": "Limit number of GitHub repository admins (ideally fewer than three)",
-    "default_section_number": "2",
-    "default_section_name": "user account permissions",
-    "code_name": "limitRepoAdmins",
-    "default_priority_group": "R7",
-    "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/180.html",
-    "mitre_description": "CAPEC-180",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://best.openssf.org/SCM-BestPractices/github/repository/repository_has_too_many_admins.html",
-    "sources_description": "OpenSSF SCM Best Practices",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/limitRepoAdmins",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria#0.vulnerability_report_response",
+          "name": "OpenSSF Best Practices Badge Passing Level (vulnerability_report_response)"
+        }
+      ]
+    }
   },
   {
     "id": 71,
@@ -1460,106 +78,914 @@
     "code_name": "patchExploitableHighVulns14Days",
     "default_priority_group": "R8",
     "is_c_scrm": false,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria#0.vulnerabilities_critical_fixed",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [vulnerabilities_critical_fixed]",
     "implementation_status": "pending",
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/patchExploitableHighVulns14Days",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria#0.vulnerabilities_critical_fixed",
+          "name": "OpenSSF Best Practices Badge Passing Level (vulnerabilities_critical_fixed)"
+        },
+        {
+          "url": "https://googleprojectzero.blogspot.com/p/vulnerability-disclosure-policy.html",
+          "name": "Google Project Zero Vulnerability Disclosure Policy"
+        }
+      ]
+    }
   },
   {
-    "id": 72,
-    "title": "Patch non-critical vulnerabilities in 60 Days",
-    "description": "Non-critical exploitable vulnerabilities patched within 60 Days",
-    "default_section_number": "5",
-    "default_section_name": "vulnerability management",
-    "code_name": "patchExploitableNoncCriticalVulns60Days",
-    "default_priority_group": "R8",
-    "is_c_scrm": false,
-    "mitre_url": null,
-    "mitre_description": null,
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria#0.vulnerabilities_fixed_60_days",
-    "sources_description": "OpenSSF Best Practices Badge Silver Level [vulnerabilities_fixed_60_days]",
+    "id": 68,
+    "title": "Require approved PRs for mainline commits",
+    "description": "Require approved PRs for all commits to mainline branches",
+    "default_section_number": "9",
+    "default_section_name": "source control",
+    "code_name": "requirePRApprovalForMainline",
+    "default_priority_group": "R6",
+    "is_c_scrm": true,
     "implementation_status": "pending",
     "implementation_type": null,
     "implementation_details_reference": null,
-    "details_url": "https://openpathfinder.com/docs/checks/patchExploitableNoncCriticalVulns60Days",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
+    "details_url": "https://openpathfinder.com/docs/checks/requirePRApprovalForMainline",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/670.html",
+          "name": "CAPEC-670"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/443.html",
+          "name": "CAPEC-443"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/438.html",
+          "name": "CAPEC-438"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#use-branch-protection-rules",
+          "name": "CNCF SSCP v1.0 #190"
+        }
+      ]
+    }
   },
   {
-    "id": 3,
-    "title": "Enforce MFA in GitHub organization(s)",
-    "description": "Multi Factor authentication (MFA) enforced across the Github Organization(s)",
+    "id": 4,
+    "title": "Enforce MFA in npm organization(s)",
+    "description": "Multi Factor Authentication (MFA) enforced across the npm organization(s)",
     "default_section_number": "1",
     "default_section_name": "user authentication",
-    "code_name": "githubOrgMFA",
+    "code_name": "npmOrgMFA",
     "default_priority_group": "P1",
     "is_c_scrm": true,
-    "mitre_url": "https://cwe.mitre.org/data/definitions/308.html",
-    "mitre_description": "CWE-308",
-    "how_to_url": "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://best.openssf.org/SCM-BestPractices/github/enterprise/enterprise_enforce_two_factor_authentication.html",
-    "sources_description": "OpenSSF SCM Best PracticesOpenSSF Best Practices Badge Gold Level [require_2FA]",
-    "implementation_status": "completed",
-    "implementation_type": "computed",
-    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/43",
-    "details_url": "https://openpathfinder.com/docs/checks/githubOrgMFA",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/npmOrgMFA",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/308.html",
+          "name": "CWE-308"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1032/",
+          "name": "M1032"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.npmjs.com/requiring-two-factor-authentication-in-your-organization",
+          "name": "npm Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/package-manager-best-practices/blob/main/published/npm.md",
+          "name": "OpenSSF npm Best Practices"
+        }
+      ]
+    }
   },
   {
-    "id": 1,
-    "title": "Training on secure software design",
-    "description": "At least one primary maintainer has taken the training on Secure Software Design",
-    "default_section_number": "7",
-    "default_section_name": "code quality",
-    "code_name": "softwareDesignTraining",
-    "default_priority_group": "P0",
-    "is_c_scrm": false,
-    "mitre_url": "https://attack.mitre.org/mitigations/M1013/",
-    "mitre_description": "M1013",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.know_secure_design",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [know_secure_design]",
-    "implementation_status": "completed",
-    "implementation_type": "manual",
-    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/52",
-    "details_url": "https://openpathfinder.com/docs/checks/softwareDesignTraining",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
+    "id": 34,
+    "title": "Set default GitHub workflow token permissions to read-only",
+    "description": "Ensure GitHub organization default workflow token permissions are set to read-only",
+    "default_section_number": "4",
+    "default_section_name": "github workflow permissions",
+    "code_name": "defaultTokenPermissionsReadOnly",
+    "default_priority_group": "P9",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/defaultTokenPermissionsReadOnly",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/250.html",
+          "name": "CWE-250"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/69.html",
+          "name": "CAPEC-69"
+        }
+      ],
+      "how_to": [],
+      "sources": []
+    }
   },
   {
-    "id": 15,
-    "title": "Allow only admins to create public repositories",
-    "description": "Only admins should be able to create public repositories",
+    "id": 51,
+    "title": "Provide machine-readable dependency lists",
+    "description": "Ensure a machine-readable list of all direct and transitive dependencies is available for the software",
+    "default_section_number": "10",
+    "default_section_name": "dependency inventory",
+    "code_name": "machineReadableDependencies",
+    "default_priority_group": "P14",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/machineReadableDependencies",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security#what-is-the-dependency-graph",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://scvs.owasp.org/scvs/v1-inventory/#verification-requirements",
+          "name": "OWASP SCVS L1 1.3"
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.external_dependencies://scvs.owasp.org/scvs/v1-inventory/#verification-requirements",
+          "name": "OpenSSF Best Practices Badge Silver Level (external_dependencies)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 70,
+    "title": "Limit GitHub repo admins to fewer than three",
+    "description": "Limit number of GitHub repository admins (ideally fewer than three)",
     "default_section_number": "2",
     "default_section_name": "user account permissions",
-    "code_name": "adminRepoCreationOnly",
+    "code_name": "limitRepoAdmins",
+    "default_priority_group": "R7",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/limitRepoAdmins",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/180.html",
+          "name": "CAPEC-180"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1026/",
+          "name": "M1026"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/repository_has_too_many_admins.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "title": "Uniquely identify modified dependencies",
+    "description": "Ensure modified dependencies are uniquely identified and clearly distinguished from the original dependency",
+    "default_section_number": "10",
+    "default_section_name": "dependency inventory",
+    "code_name": "identifyModifiedDependencies",
+    "default_priority_group": "P14",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/identifyModifiedDependencies",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://scvs.owasp.org/scvs/v6-pedigree-and-provenance/",
+          "name": "OWASP SCVS L2 6.5"
+        }
+      ]
+    }
+  },
+  {
+    "id": 67,
+    "title": "Require code owners review",
+    "description": "Require code owners review",
+    "default_section_number": "8",
+    "default_section_name": "code review",
+    "code_name": "requireCodeOwnersReviewForLargeTeams",
+    "default_priority_group": "R6",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/requireCodeOwnersReviewForLargeTeams",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/670.html",
+          "name": "CAPEC-670"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/443.html",
+          "name": "CAPEC-443"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/438.html",
+          "name": "CAPEC-438"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#code-review",
+          "name": "OpenSSF Scorecard"
+        }
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "title": "Enforce commit sign-off for web based commits",
+    "description": "GitHub org requires commit sign-off for web-based commits",
+    "default_section_number": "9",
+    "default_section_name": "source control",
+    "code_name": "commitSignoffForWeb",
+    "default_priority_group": "R4",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/commitSignoffForWeb",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/organizations/managing-organization-settings/managing-the-commit-signoff-policy-for-your-organization#managing-compulsory-commit-signoffs-for-your-organization",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#require-signed-commits",
+          "name": "CNCF SSCP 1.0 #325"
+        },
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/no_signed_commits.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "title": "Block new commits with secrets or credentials",
+    "description": "New commits containing secrets or credentials are blocked from merging",
+    "default_section_number": "7",
+    "default_section_name": "code quality",
+    "code_name": "preventLandingSensitiveCommits",
+    "default_priority_group": "P2",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/preventLandingSensitiveCommits",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/358.html",
+          "name": "CWE-358"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria#0.no_leaked_credentials",
+          "name": "OpenSSF Best Practices Badge Passing Level (no_leaked_credentials)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "title": "Prevent workflows from creating or approving PRs",
+    "description": "Ensure workflows are not allowed to create or approve pull requests",
+    "default_section_number": "4",
+    "default_section_name": "github workflow permissions",
+    "code_name": "blockWorkflowPRApproval",
+    "default_priority_group": "P9",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/blockWorkflowPRApproval",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/250.html",
+          "name": "CWE-250"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/69.html",
+          "name": "CAPEC-69"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#preventing-github-actions-from-creating-or-approving-pull-requests",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/actions_can_approve_pull_requests.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "title": "Document consistent and automated build processes",
+    "description": "Ensure a consistent and automated build process is documented and followed",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "consistentBuildProcessDocs",
+    "default_priority_group": "P12",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/consistentBuildProcessDocs",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/1068.html",
+          "name": "CWE-1068"
+        }
+      ],
+      "how_to": [],
+      "sources": []
+    }
+  },
+  {
+    "id": 6,
+    "title": "Use MFA against impersonation",
+    "description": "Use Multi Factor Authentication (MFA) methods that defend against impersonation when available ",
+    "default_section_number": "1",
+    "default_section_name": "user authentication",
+    "code_name": "MFAImpersonationDefense",
+    "default_priority_group": "P1",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/MFAImpersonationDefense",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/290.html",
+          "name": "CWE-290"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/151.html",
+          "name": "CAPEC-151"
+        },
+        {
+          "url": "https://attack.mitre.org/techniques/T1621",
+          "name": "T1621"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1032/",
+          "name": "M1032"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria/2#2.secure_2FA",
+          "name": "OpenSSF Best Practices Badge Gold Level (secure_2FA)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "title": "Restrict GitHub organization secrets to specific repositories",
+    "description": "Limit GitHub organization secrets to only be accessible by selected repositories",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "restrictOrgSecrets",
+    "default_priority_group": "P10",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/restrictOrgSecrets",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/250.html",
+          "name": "CWE-250"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/69.html",
+          "name": "CAPEC-69"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#managing-github-actions-permissions-for-your-repository",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/actions/all_repositories_can_run_github_actions.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 69,
+    "title": "Limit GitHub org owners to fewer than three",
+    "description": "Limit the number of GitHub org owners (ideally fewer than three)",
+    "default_section_number": "2",
+    "default_section_name": "user account permissions",
+    "code_name": "limitOrgOwners",
+    "default_priority_group": "R7",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/limitOrgOwners",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://attack.mitre.org/mitigations/M1026/",
+          "name": "M1026"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/member/organization_has_too_many_admins.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "title": "Disable force push on default branch",
+    "description": "Ensure force push is disabled on the default branch",
+    "default_section_number": "9",
+    "default_section_name": "source control",
+    "code_name": "noForcePushDefaultBranch",
+    "default_priority_group": "P9",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/noForcePushDefaultBranch",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/missing_default_branch_protection_force_push.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "title": "Assign CVEs to all known security vulnerabilities",
+    "description": "Ensure all known security vulnerabilities are issued a CVE",
+    "default_section_number": "6",
+    "default_section_name": "coordinated vulnerability disclosure",
+    "code_name": "assignCVEForKnownVulns",
+    "default_priority_group": "P7",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/assignCVEForKnownVulns",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.release_notes_vulns",
+          "name": "OpenSSF Best Practices Badge Passing Level (release_notes_vulns)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "title": "Automate monitoring of outdated dependencies",
+    "description": "Ensure an automated process is in place to monitor and maintain a list of outdated dependencies",
+    "default_section_number": "10",
+    "default_section_name": "dependency inventory",
+    "code_name": "automateDependencyManagement",
+    "default_priority_group": "P14",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/automateDependencyManagement",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [
+        {
+          "url": "https://socket.dev/",
+          "name": "Socket.Dev"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://scvs.owasp.org/scvs/v5-component-analysis/",
+          "name": "OWASP SCVS L1 5.7"
+        }
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "title": "Require active admins in GitHub organization (activity in 6 months)",
+    "description": "Ensure GitHub organization admins have been active within the last 6 months",
+    "default_section_number": "2",
+    "default_section_name": "user account permissions",
+    "code_name": "activeAdminsSixMonths",
+    "default_priority_group": "R3",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/activeAdminsSixMonths",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://attack.mitre.org/mitigations/M1026/",
+          "name": "M1026"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/member/stale_admin_found.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "title": "Restrict default GitHub Org member permissions",
+    "description": "Default GitHub organization member permissions should be restricted",
+    "default_section_number": "2",
+    "default_section_name": "user account permissions",
+    "code_name": "restrictedOrgPermissions",
     "default_priority_group": "P4",
     "is_c_scrm": true,
-    "mitre_url": "https://capec.mitre.org/data/definitions/122.html",
-    "mitre_description": "CAPEC-122",
-    "how_to_url": "https://docs.github.com/en/organizations/managing-organization-settings/restricting-repository-creation-in-your-organization",
-    "how_to_description": "Github Docs",
-    "sources_url": "https://best.openssf.org/SCM-BestPractices/github/organization/non_admins_can_create_public_repositories.html",
-    "sources_description": "OpenSSF SCM Best Practices",
-    "implementation_status": "completed",
-    "implementation_type": "computed",
-    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/75",
-    "details_url": "https://openpathfinder.com/docs/checks/adminRepoCreationOnly",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/restrictedOrgPermissions",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/180.html",
+          "name": "CAPEC-180"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1026/",
+          "name": "M1026"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/setting-base-permissions-for-an-organization",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/organization/default_repository_permission_is_not_none.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "title": "Require two-party review",
+    "description": "Require two party review",
+    "default_section_number": "8",
+    "default_section_name": "code review",
+    "code_name": "requireTwoPartyReview",
+    "default_priority_group": "R6",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/requireTwoPartyReview",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/670.html",
+          "name": "CAPEC-670"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/443.html",
+          "name": "CAPEC-443"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/438.html",
+          "name": "CAPEC-438"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#code-review",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#2.two_person_review",
+          "name": "OpenSSF Best Practices Badge Gold Level (two_person_review)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "title": "Automate dependency vulnerability identification",
+    "description": "Implement an automated process to identify dependencies with publicly disclosed vulnerabilities",
+    "default_section_number": "11",
+    "default_section_name": "dependency management",
+    "code_name": "automateVulnDetection",
+    "default_priority_group": "P6",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/automateVulnDetection",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/1395.html",
+          "name": "CWE-1395"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1016/",
+          "name": "M1016"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates#managing-dependabot-security-updates-for-your-repositories",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://scvs.owasp.org/scvs/v5-component-analysis/",
+          "name": "OWASP SCVS L1 5.4"
+        },
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#dependency-update-tool",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.dependency_monitoring",
+          "name": "OpenSSF Best Practices Badge Passing Level (dependency_monitoring)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "title": "Use GitHub runner security scanners",
+    "description": "Ensure a GitHub runner security scanner is utilized",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "runnerSecurityScanner",
+    "default_priority_group": "R2",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/runnerSecurityScanner",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://attack.mitre.org/mitigations/M1047/",
+          "name": "M1047"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://github.com/step-security/harden-runner",
+          "name": "Step Security harden-runner"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#hardening-for-self-hosted-runners",
+          "name": "Github Action Hardening Docs"
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "title": "Secure GitHub Webhooks with secrets",
+    "description": "Ensure that Github Webhooks use secrets",
+    "default_section_number": "3",
+    "default_section_name": "service authentication",
+    "code_name": "githubWebhookSecrets",
+    "default_priority_group": "P3",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/githubWebhookSecrets",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/306",
+          "name": "CWE-306"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#webhooks",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/repository_webhook_no_secret.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 65,
+    "title": "Include package-lock.json in releases",
+    "description": "Commit a package-lock.json file with each release",
+    "default_section_number": "10",
+    "default_section_name": "dependency inventory",
+    "code_name": "includePackageLock",
+    "default_priority_group": "R5",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/includePackageLock",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [
+        {
+          "url": "https://docs.npmjs.com/cli/v10/commands/npm-sbom",
+          "name": "npm Docs"
+        },
+        {
+          "url": "https://github.com/ossf/sbom-everywhere/blob/main/reference/sbom_naming.md",
+          "name": "OpenSSF SBOM Naming Conventions"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#sbom",
+          "name": "OpenSSF Scorecard"
+        }
+      ]
+    }
   },
   {
     "id": 2,
@@ -1570,17 +996,1607 @@
     "code_name": "owaspTop10Training",
     "default_priority_group": "P0",
     "is_c_scrm": false,
-    "mitre_url": "https://attack.mitre.org/mitigations/M1013/",
-    "mitre_description": "M1013",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.know_common_errors",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [know_common_errors]",
     "implementation_status": "completed",
     "implementation_type": "manual",
     "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/63",
     "details_url": "https://openpathfinder.com/docs/checks/owaspTop10Training",
-    "created_at": "2025-01-22T20:35:23.297Z",
-    "updated_at": "2025-01-22T20:35:23.297Z"
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://attack.mitre.org/mitigations/M1013/",
+          "name": "M1013"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.know_common_errors",
+          "name": "OpenSSF Best Practices Badge Passing Level (know_common_errors)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "title": "Prevent admins from bypassing branch protection",
+    "description": "Do not allow admins to bypass branch protection settings",
+    "default_section_number": "2",
+    "default_section_name": "user account permissions",
+    "code_name": "preventBranchProtectionBypass",
+    "default_priority_group": "P4",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/preventBranchProtectionBypass",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/122.html",
+          "name": "CAPEC-122"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#do-not-allow-bypassing-the-above-settings",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+          "name": "Github Supply Chain Security Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "title": "Require pull requests before merging",
+    "description": "Require pull requests before merging",
+    "default_section_number": "9",
+    "default_section_name": "source control",
+    "code_name": "PRsBeforeMerge",
+    "default_priority_group": "R4",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/PRsBeforeMerge",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/778.html",
+          "name": "CWE-778"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.repo_track",
+          "name": "OpenSSF Best Practices Badge Passing Level (repo_track)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "title": "Avoid script injection from untrusted variables",
+    "description": "Ensure script injection is prevented by avoiding untrusted context variables",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "preventScriptInjection",
+    "default_priority_group": "P11",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/preventScriptInjection",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/454.html",
+          "name": "CWE-454"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/242.html",
+          "name": "CAPEC-242"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://securitylab.github.com/research/github-actions-untrusted-input/",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#dangerous-workflow",
+          "name": "OpenSSF Scorecard"
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "title": "Use SSH keys with passphrases for repository access",
+    "description": "Use SSH keys for developer access to source code repositories and use a passphrase",
+    "default_section_number": "1",
+    "default_section_name": "user authentication",
+    "code_name": "SSHKeysRequired",
+    "default_priority_group": "P3",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/SSHKeysRequired",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/309.html",
+          "name": "CWE-309"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#use-ssh-keys-to-provide-developers-access-to-source-code-repositories",
+          "name": "CNCF SSCP v1.0 #192"
+        }
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "title": "Restrict build pipeline code execution to build scripts",
+    "description": "Ensure the build pipeline cannot execute arbitrary code outside of a build script",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "noArbitraryCodeInPipeline",
+    "default_priority_group": "P11",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/noArbitraryCodeInPipeline",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/94.html",
+          "name": "CWE-94"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/19.html",
+          "name": "CAPEC-19"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#dangerous-workflow",
+          "name": "OpenSSF Scorecard"
+        }
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "title": "Disable self-hosted runners in GitHub organization",
+    "description": "Ensure the use of self-hosted runners is disabled in the GitHub organization",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "noSelfHostedRunners",
+    "default_priority_group": "P10",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/noSelfHostedRunners",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/439.html",
+          "name": "CAPEC-439"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#limiting-the-use-of-self-hosted-runners",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#hardening-for-self-hosted-runners",
+          "name": "Github Action Hardening Docs"
+        }
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "title": "Support older versions or provide upgrade paths",
+    "description": "Ensure commonly used older versions are supported or an upgrade path is documented and provided",
+    "default_section_number": "5",
+    "default_section_name": "vulnerability management",
+    "code_name": "upgradePathDocs",
+    "default_priority_group": "P12",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/upgradePathDocs",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.maintenance_or_update",
+          "name": "OpenSSF Best Practices Badge Silver Level (maintenance_or_update)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "title": "Limit GitHub Actions to verified or trusted actions",
+    "description": "Ensure GitHub Actions are limited to verified or explicitly trusted actions",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "verifiedActionsOnly",
+    "default_priority_group": "P10",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/verifiedActionsOnly",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/1357.html",
+          "name": "CWE-1357"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/17.html",
+          "name": "CAPEC-17"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/538.html",
+          "name": "CAPEC-538"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/446.html",
+          "name": "CAPEC-446"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-select-actions-and-reusable-workflows-to-run",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/actions/all_github_actions_are_allowed.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "title": "Limit workflow write permissions to job level",
+    "description": "Ensure workflows are granted write permissions only at the job level",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "limitWorkflowWritePermissions",
+    "default_priority_group": "P11",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/limitWorkflowWritePermissions",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/250.html",
+          "name": "CWE-250"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/69.html",
+          "name": "CAPEC-69"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/actions_can_approve_pull_requests.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "title": "Refresh dependencies with annual releases",
+    "description": "Ensure dependencies are refreshed through a new release at least once annually",
+    "default_section_number": "5",
+    "default_section_name": "vulnerability management",
+    "code_name": "annualDependencyRefresh",
+    "default_priority_group": "P14",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/annualDependencyRefresh",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.maintained",
+          "name": "OpenSSF Best Practices Badge Passing Level (maintained)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "title": "Include CVE IDs in release notes for security fixes",
+    "description": "Ensure release notes include the CVE ID for patched security vulnerabilities",
+    "default_section_number": "6",
+    "default_section_name": "coordinated vulnerability disclosure",
+    "code_name": "includeCVEInReleaseNotes",
+    "default_priority_group": "P7",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/includeCVEInReleaseNotes",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.release_notes_vulns",
+          "name": "OpenSSF Best Practices Badge Passing Level (release_notes_vulns)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "title": "Ensure that all the commits are scanned",
+    "description": "All commits are scanned for secrets and credentials ",
+    "default_section_number": "7",
+    "default_section_name": "code quality",
+    "code_name": "scanCommitsForSensitiveInfo",
+    "default_priority_group": "P2",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/scanCommitsForSensitiveInfo",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/540.html",
+          "name": "CWE-540"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/150.html",
+          "name": "CAPEC-150"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fnref-21-4e56305414bd02da4843ec1d7d856144",
+          "name": "CNCF SSCP v1.0 #184"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "title": "Check sensitive information",
+    "description": "No secrets or credentials are included in the source code",
+    "default_section_number": "3",
+    "default_section_name": "service authentication",
+    "code_name": "noSensitiveInfoInRepositories",
+    "default_priority_group": "P2",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/noSensitiveInfoInRepositories",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/540.html",
+          "name": "CWE-540"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria#0.no_leaked_credentials",
+          "name": "OpenSSF Best Practices Badge Passing Level (no_leaked_credentials)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "title": "Require default branch updates before merging",
+    "description": "Ensure the default branch is up to date before allowing merges",
+    "default_section_number": "9",
+    "default_section_name": "source control",
+    "code_name": "upToDateDefaultBranchBeforeMerge",
+    "default_priority_group": "P9",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/upToDateDefaultBranchBeforeMerge",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/requires_branches_up_to_date_before_merge.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "title": "Allow only admins to create public repositories",
+    "description": "Only admins should be able to create public repositories",
+    "default_section_number": "2",
+    "default_section_name": "user account permissions",
+    "code_name": "adminRepoCreationOnly",
+    "default_priority_group": "P4",
+    "is_c_scrm": true,
+    "implementation_status": "completed",
+    "implementation_type": "computed",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/75",
+    "details_url": "https://openpathfinder.com/docs/checks/adminRepoCreationOnly",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/122.html",
+          "name": "CAPEC-122"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/organizations/managing-organization-settings/restricting-repository-creation-in-your-organization",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/organization/non_admins_can_create_public_repositories.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "title": "Automate CI/CD steps in code-based pipelines",
+    "description": "Ensure all CI/CD steps are automated through pipelines defined as code",
+    "default_section_number": "9",
+    "default_section_name": "source control",
+    "code_name": "ciAndCdPipelineAsCode",
+    "default_priority_group": "P12",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/ciAndCdPipelineAsCode",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#build-and-related-continuous-integrationcontinuous-delivery-steps-should-all-be-automated-through-a-pipeline-defined-as-code",
+          "name": "CNCF SSCP 1.0 #158"
+        }
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "title": "Require commit status checks to pass before merging",
+    "description": "Ensure all required commit status checks pass before merging",
+    "default_section_number": "7",
+    "default_section_name": "code quality",
+    "code_name": "commitStatusChecks",
+    "default_priority_group": "P6",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/commitStatusChecks",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/358.html",
+          "name": "CWE-358"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/requires_status_checks.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "title": "Publish to npm using MFA-Enabled accounts",
+    "description": "Publish to npm using an MFA-enabled account rather than single factor legacy or granular access tokens",
+    "default_section_number": "3",
+    "default_section_name": "service authentication",
+    "code_name": "npmPublicationMFA",
+    "default_priority_group": "P3",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/npmPublicationMFA",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/308.html",
+          "name": "CWE-308"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://docs.npmjs.com/creating-and-viewing-access-tokens",
+          "name": "npm Docs"
+        }
+      ]
+    }
+  },
+  {
+    "id": 72,
+    "title": "Patch non-critical vulnerabilities in 60 Days",
+    "description": "Non-critical exploitable vulnerabilities patched within 60 Days",
+    "default_section_number": "5",
+    "default_section_name": "vulnerability management",
+    "code_name": "patchExploitableNoncCriticalVulns60Days",
+    "default_priority_group": "R8",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/patchExploitableNoncCriticalVulns60Days",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria#0.vulnerabilities_fixed_60_days",
+          "name": "OpenSSF Best Practices Badge Silver Level (vulnerabilities_fixed_60_days)"
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.static_analysis_fixed",
+          "name": "OpenSSF Best Practices Badge Passing Level (static_analysis_fixed)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "title": "Require approval for forked workflow changes",
+    "description": "Ensure changes to workflows from forks require approval for all outside collaborators",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "forkWorkflowApproval",
+    "default_priority_group": "R2",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/forkWorkflowApproval",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/180.html",
+          "name": "CAPEC-180"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#controlling-changes-from-forks-to-workflows-in-public-repositories",
+          "name": "Github Docs"
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "title": "Address compiler and linter warnings before merging",
+    "description": "Ensure all compiler and linter warnings are resolved before merging",
+    "default_section_number": "7",
+    "default_section_name": "code quality",
+    "code_name": "resolveLinterWarnings",
+    "default_priority_group": "P6",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/resolveLinterWarnings",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/1127.html",
+          "name": "CWE-1127"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://eslint.org/docs/latest/use/getting-started#installation-and-usage",
+          "name": "ESLint Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.warnings_strict",
+          "name": "OpenSSF Best Practices Badge Silver Level (warnings_strict)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "title": "Require active members with write access (activity in 6 months)",
+    "description": "Ensure GitHub organization members with write permissions have been active within the last 6 months",
+    "default_section_number": "2",
+    "default_section_name": "user account permissions",
+    "code_name": "activeWritersSixMonths",
+    "default_priority_group": "R3",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/activeWritersSixMonths",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://attack.mitre.org/mitigations/M1026/",
+          "name": "M1026"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/member/stale_member_found.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "title": "Configure two or more owners for access continuity",
+    "description": "Have at least two owners configured for access continuity",
+    "default_section_number": "2",
+    "default_section_name": "user account permissions",
+    "code_name": "twoOrMoreOwnersForAccess",
+    "default_priority_group": "P4",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/twoOrMoreOwnersForAccess",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://attack.mitre.org/mitigations/M1026/",
+          "name": "M1026"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/maintaining-ownership-continuity-for-your-organization",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.access_continuity",
+          "name": "OpenSSF Best Practices Badge Silver Level (access_continuity)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "title": "Use static application security testing for all commits",
+    "description": "Ensure all commits are scanned by a static application security testing tool",
+    "default_section_number": "7",
+    "default_section_name": "code quality",
+    "code_name": "staticAppSecTesting",
+    "default_priority_group": "P6",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/staticAppSecTesting",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/1076.html",
+          "name": "CWE-1076"
+        },
+        {
+          "url": "https://cwe.mitre.org/data/definitions/1078.html",
+          "name": "CWE-1078"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1016/",
+          "name": "M1016"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql",
+          "name": "CodeQL Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#sast",
+          "name": "OWASP SCVS L1 6.6\nOpenSSF Scorecard"
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.static_analysis_common_vulnerabilities",
+          "name": "OpenSSF Best Practices Badge Gold Level (static_analysis_common_vulnerabilities)"
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#2.test_continuous_integration",
+          "name": "OpenSSF Best Practices Badge Gold Level (test_continuous_integration)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "title": "Define clear communication and incident response plans",
+    "description": "Establish clear communication and incident response plans",
+    "default_section_number": "6",
+    "default_section_name": "coordinated vulnerability disclosure",
+    "code_name": "incidentResponsePlan",
+    "default_priority_group": "P7",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/incidentResponsePlan",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/#operations",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "title": "Patch non-critical vulnerabilities within 90 days",
+    "description": "Ensure non-critical exploitable vulnerabilities are patched within 90 days",
+    "default_section_number": "5",
+    "default_section_name": "vulnerability management",
+    "code_name": "patchNonCriticalVulns90Days",
+    "default_priority_group": "P5",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/patchNonCriticalVulns90Days",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://googleprojectzero.blogspot.com/p/vulnerability-disclosure-policy.html",
+          "name": "Google Project Zero Vulnerability Disclosure Policy"
+        }
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "title": "Pin actions with secrets to full-length commit SHAs",
+    "description": "Ensure actions with access to secrets are pinned to a full-length commit SHA",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "pinActionsToSHA",
+    "default_priority_group": "P13",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/pinActionsToSHA",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/1357.html",
+          "name": "CWE-1357"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/17.html",
+          "name": "CAPEC-17"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/538.html",
+          "name": "CAPEC-538"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/446.html",
+          "name": "CAPEC-446"
+        },
+        {
+          "url": "https://capec.mitre.org/data/definitions/186.html",
+          "name": "CAPEC-186"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://securitylab.github.com/research/github-actions-building-blocks/",
+          "name": "Github Docs"
+        }
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "title": "Document software architecture",
+    "description": "Ensure the software architecture is clearly documented",
+    "default_section_number": "8",
+    "default_section_name": "code review",
+    "code_name": "softwareArchitectureDocs",
+    "default_priority_group": "P12",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/softwareArchitectureDocs",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/1053.html",
+          "name": "CWE-1053"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.documentation_architecture",
+          "name": "OpenSSF Best Practices Badge Silver Level (documentation_architecture)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "Enforce MFA in GitHub organization(s)",
+    "description": "Multi Factor authentication (MFA) enforced across the Github Organization(s)",
+    "default_section_number": "1",
+    "default_section_name": "user authentication",
+    "code_name": "githubOrgMFA",
+    "default_priority_group": "P1",
+    "is_c_scrm": true,
+    "implementation_status": "completed",
+    "implementation_type": "computed",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/43",
+    "details_url": "https://openpathfinder.com/docs/checks/githubOrgMFA",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/308.html",
+          "name": "CWE-308"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1032/",
+          "name": "M1032"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/enterprise/enterprise_enforce_two_factor_authentication.html",
+          "name": "OpenSSF Best Practices Badge Gold Level (require_2FA)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "title": "Define roles aligned to functional responsibilities",
+    "description": "Define roles aligned to functional responsibilities",
+    "default_section_number": "2",
+    "default_section_name": "user account permissions",
+    "code_name": "defineFunctionalRoles",
+    "default_priority_group": "P4",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/defineFunctionalRoles",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/122.html",
+          "name": "CAPEC-122"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1018/",
+          "name": "M1018"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#define-roles-aligned-to-functional-responsibilities",
+          "name": "CNCF SSCP v1.0 #188"
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.roles_responsibilities",
+          "name": "OpenSSF Best Practices Badge Silver Level (roles_responsibilities)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "title": "Prevent deletion of default branch",
+    "description": "Ensure the default branch cannot be deleted",
+    "default_section_number": "9",
+    "default_section_name": "source control",
+    "code_name": "preventDeletionDefaultBranch",
+    "default_priority_group": "P9",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/preventDeletionDefaultBranch",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/267.html",
+          "name": "CWE-267"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/missing_default_branch_protection_deletion.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "title": "Use CVD tools to manage vulnerability reports",
+    "description": "Ensure the project utilizes a CVD tool to privately receive and manage external vulnerability reports (e.g., HackerOne, GitHub PVR)",
+    "default_section_number": "6",
+    "default_section_name": "coordinated vulnerability disclosure",
+    "code_name": "useCVDToolForVulns",
+    "default_priority_group": "P7",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/useCVDToolForVulns",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/configuring-private-vulnerability-reporting-for-an-organization",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.vulnerability_report_private",
+          "name": "OpenSSF Best Practices Badge Passing Level (vulnerability_report_private)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "title": "Patch actively exploited critical vulnerabilities within 30 Days",
+    "description": "Actively exploited critical vulnerabilities patched within 30 Days",
+    "default_section_number": "5",
+    "default_section_name": "vulnerability management",
+    "code_name": "patchCriticalVulns30Days",
+    "default_priority_group": "P5",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/patchCriticalVulns30Days",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria#0.vulnerabilities_critical_fixed",
+          "name": "OpenSSF Best Practices Badge Passing Level (vulnerabilities_critical_fixed)"
+        },
+        {
+          "url": "https://googleprojectzero.blogspot.com/p/vulnerability-disclosure-policy.html",
+          "name": "Google Project Zero Vulnerability Disclosure Policy"
+        }
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "title": "Create regression tests for bugs and security vulnerabilities",
+    "description": "Ensure regression tests cover at least 50% of bugs and 100% of security vulnerabilities",
+    "default_section_number": "7",
+    "default_section_name": "code quality",
+    "code_name": "regressionTestsForVulns",
+    "default_priority_group": "P8",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/regressionTestsForVulns",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.regression_tests_added50",
+          "name": "OpenSSF Best Practices Badge Silver Level (regression_tests_added50)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "title": "Training on secure software design",
+    "description": "At least one primary maintainer has taken the training on Secure Software Design",
+    "default_section_number": "7",
+    "default_section_name": "code quality",
+    "code_name": "softwareDesignTraining",
+    "default_priority_group": "P0",
+    "is_c_scrm": false,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/52",
+    "details_url": "https://openpathfinder.com/docs/checks/softwareDesignTraining",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://attack.mitre.org/mitigations/M1013/",
+          "name": "M1013"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.know_secure_design",
+          "name": "OpenSSF Best Practices Badge Passing Level (know_secure_design)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "title": "Enforce MFA in all the tools",
+    "description": "Multi Factor Authentication (MFA) enforced in all tools wherever technically feasible",
+    "default_section_number": "1",
+    "default_section_name": "user authentication",
+    "code_name": "orgToolingMFA",
+    "default_priority_group": "P1",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/orgToolingMFA",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/308.html",
+          "name": "CWE-308"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1032/",
+          "name": "M1032"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md",
+          "name": "CNCF CNSWP v1.0"
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "title": "Define teams/individuals with write access to repositories",
+    "description": "Define individuals/teams who write access to a GitHub Repository",
+    "default_section_number": "2",
+    "default_section_name": "user account permissions",
+    "code_name": "githubWriteAccessRoles",
+    "default_priority_group": "P4",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/githubWriteAccessRoles",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://capec.mitre.org/data/definitions/180.html",
+          "name": "CAPEC-180"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1026/",
+          "name": "M1026"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#define-individualsteams-that-are-responsible-for-code-in-a-repository-and-associated-coding-conventions",
+          "name": "CNCF SSCP v1.0 #185"
+        }
+      ]
+    }
+  },
+  {
+    "id": 64,
+    "title": "Require signed commits",
+    "description": "Require signed commits",
+    "default_section_number": "9",
+    "default_section_name": "source control",
+    "code_name": "requireSignedCommits",
+    "default_priority_group": "R4",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/requireSignedCommits",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-signed-commits",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#require-signed-commits",
+          "name": "CNCF SSCP 1.0 #325"
+        },
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/no_signed_commits.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "title": "Use AAL2/3 passkeys for non-interactive GitHub access",
+    "description": "Ensure non-interactive GitHub access uses a passkey (AAL2) or hardware key (AAL3) activated by a password or biometrics",
+    "default_section_number": "1",
+    "default_section_name": "user authentication",
+    "code_name": "useHwKeyGithubNonInteractive",
+    "default_priority_group": "R1",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/useHwKeyGithubNonInteractive",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/308.html",
+          "name": "CWE-308"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1032/",
+          "name": "M1032"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key-for-a-hardware-security-key",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/great-mfa-project/blob/main/security-rationale.md",
+          "name": "OpenSSF Great MFA Project Security Rationale"
+        },
+        {
+          "url": "https://www.nist.gov/blogs/cybersecurity-insights/giving-nist-digital-identity-guidelines-boost-supplement-incorporating",
+          "name": "NIST SP 800-63Bsup1"
+        }
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "title": "Ensure Security.md meets OpenJS CVD guidelines",
+    "description": "Verify that Security.md complies with OpenJS CVD guidelines",
+    "default_section_number": "6",
+    "default_section_name": "coordinated vulnerability disclosure",
+    "code_name": "securityMdMeetsOpenJSCVD",
+    "default_priority_group": "P7",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/securityMdMeetsOpenJSCVD",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#security-policy",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.vulnerability_response_process",
+          "name": "OpenSSF Best Practices Badge Silver Level (vulnerability_response_process)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "title": "Use automated static code analysis tools",
+    "description": "Implement automated static code analysis tools (e.g., ESLint)",
+    "default_section_number": "7",
+    "default_section_name": "code quality",
+    "code_name": "staticCodeAnalysis",
+    "default_priority_group": "P6",
+    "is_c_scrm": false,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/staticCodeAnalysis",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/1076.html",
+          "name": "CWE-1076"
+        },
+        {
+          "url": "https://cwe.mitre.org/data/definitions/1078.html",
+          "name": "CWE-1078"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1016/",
+          "name": "M1016"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://eslint.org/docs/latest/use/getting-started#installation-and-usage",
+          "name": "ESLint Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://scvs.owasp.org/scvs/v5-component-analysis/",
+          "name": "OWASP SCVS L1 5.1"
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.coding_standards_enforced",
+          "name": ""
+        },
+        {
+          "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.coding_standards_enforced",
+          "name": "OpenSSF Best Practices Badge Silver Level (coding_standards_enforced)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "title": "Use AAL2/3 passkeys in all other contexts",
+    "description": "Ensure all other contexts use a passkey (AAL2) or hardware key (AAL3) activated by a password or biometrics",
+    "default_section_number": "1",
+    "default_section_name": "user authentication",
+    "code_name": "useHwKeyOtherContexts",
+    "default_priority_group": "R1",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/useHwKeyOtherContexts",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/308.html",
+          "name": "CWE-308"
+        },
+        {
+          "url": "https://attack.mitre.org/mitigations/M1032/",
+          "name": "M1032"
+        }
+      ],
+      "how_to": [],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/great-mfa-project/blob/main/security-rationale.md",
+          "name": "OpenSSF Great MFA Project Security Rationale"
+        },
+        {
+          "url": "https://www.nist.gov/blogs/cybersecurity-insights/giving-nist-digital-identity-guidelines-boost-supplement-incorporating",
+          "name": "NIST SP 800-63Bsup1"
+        }
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "title": "Use workflow security scanners",
+    "description": "Ensure a workflow security scanner is utilized",
+    "default_section_number": "4",
+    "default_section_name": "github workflows",
+    "code_name": "workflowSecurityScanner",
+    "default_priority_group": "R2",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/workflowSecurityScanner",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://attack.mitre.org/mitigations/M1047/",
+          "name": "M1047"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://github.com/step-security/secure-repo",
+          "name": "Step Security secure-repo"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions",
+          "name": "OpenSSF Scorecard"
+        },
+        {
+          "url": "https://best.openssf.org/SCM-BestPractices/github/repository/token_default_permissions_is_read_write.html",
+          "name": "OpenSSF SCM Best Practices"
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "title": "Ensure that the secrets are injected at runtime",
+    "description": "Secrets are injected at runtime, such as environment variables or as a file (eg: use Github Secrets)",
+    "default_section_number": "3",
+    "default_section_name": "service authentication",
+    "code_name": "injectedSecretsAtRuntime",
+    "default_priority_group": "P2",
+    "is_c_scrm": true,
+    "implementation_status": "pending",
+    "implementation_type": null,
+    "implementation_details_reference": null,
+    "details_url": "https://openpathfinder.com/docs/checks/injectedSecretsAtRuntime",
+    "created_at": "2025-01-23T14:20:20.855Z",
+    "updated_at": "2025-01-23T14:20:20.855Z",
+    "resources": {
+      "mitre": [
+        {
+          "url": "https://cwe.mitre.org/data/definitions/538.html",
+          "name": "CWE-538"
+        }
+      ],
+      "how_to": [
+        {
+          "url": "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-an-organization",
+          "name": "Github Docs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#secrets-encryption",
+          "name": "CNCF CNSWP 2.0 #195"
+        }
+      ]
+    }
   }
 ]
