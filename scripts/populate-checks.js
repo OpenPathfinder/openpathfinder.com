@@ -28,23 +28,22 @@ const addImplementationDetails = (check) => {
   return content
 }
 
-const addContent = (title, description, url) => {
-  if (!description && !url) {
-    return ''
-  }
+const addContent = (title, urls=[]) => {
+  let content = ''
+  if(urls.length) {
+    content = urls.map((item) => {
+      return `- ${title}: [${item.name}](${item.url})`
+    }).join('\n')
+  } 
 
-  if (url) {
-    return `- ${title}: [${description}](${url})`
-  }
-
-  return `- ${title}: ${description}`
+  return content
 }
 
 const renderDetails = (check) => {
   const implementationDetails = addImplementationDetails(check)
-  const mitreDetails = addContent('Mitre', check.mitre_description, check.mitre_url)
-  const sourcesDetails = addContent('Sources', check.sources_description, check.sources_url)
-  const howToDetails = addContent('How To', check.how_to_description, check.how_to_url)
+  const mitreDetails = addContent('Mitre',  check.resources.mitre)
+  const sourcesDetails = addContent('Sources', check.resources.sources)
+  const howToDetails = addContent('How To', check.resources.how_to)
   let content = '## Details\n'
   content += `- Default Category: ${check.default_section_name}\n`
   content += `- Default Priority Group: ${check.default_priority_group}\n`
