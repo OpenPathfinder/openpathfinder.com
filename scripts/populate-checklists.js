@@ -28,10 +28,17 @@ Here you can find the official checklists for the Vision Board project:
 ${intro}
 
 ${checklists.map(checklist => {
-return `### ${checklist.code_name}
+const detail = `### ${checklist.code_name}
 - **Author**: ${checklist.author}
 - **Title**: ${checklist.title}
 - **Description**: ${checklist.description}
+- **Details**: [${checklist.code_name}](/docs/checklists/${checklist.code_name})`
+
+const checkListDetail = `## ${checklist.code_name} Checklist
+- **Author**: ${checklist.author}
+- **Title**: ${checklist.title}
+- **Description**: ${checklist.description}
+
 
 | Priority | Check | details | Info |
 | --- | --- | --- | --- |
@@ -41,7 +48,15 @@ ${checklist.checks
         return `| ${check.priority_group} | ${check.code_name} | ${check.title} | [Doc](/docs/checks/${check.code_name}) |`.trim()
     }).join('\n')}
     `
-}).join('\n')}
+
+const checkListDestination = path.join(process.cwd(), `docs/checklists/${checklist.code_name}.md`)
+writeFileSync(checkListDestination, checkListDetail)
+
+return detail
+}).join('\n')
+
+
+}
 `
 
 const checklistsListsDestination = path.join(process.cwd(), 'docs/projects/visionBoard/checklists.md')
