@@ -12,8 +12,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/useHwKeyGithubAccess",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -52,12 +52,12 @@
     "code_name": "vulnResponse14Days",
     "default_priority_group": "P7",
     "is_c_scrm": false,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/89",
     "details_url": "https://openpathfinder.com/docs/checks/vulnResponse14Days",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -82,8 +82,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/patchExploitableHighVulns14Days",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -112,8 +112,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/requirePRApprovalForMainline",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -156,12 +156,12 @@
     "code_name": "npmOrgMFA",
     "default_priority_group": "P1",
     "is_c_scrm": true,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/64",
     "details_url": "https://openpathfinder.com/docs/checks/npmOrgMFA",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -200,8 +200,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/defaultTokenPermissionsReadOnly",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -226,12 +226,12 @@
     "code_name": "machineReadableDependencies",
     "default_priority_group": "P14",
     "is_c_scrm": true,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/110",
     "details_url": "https://openpathfinder.com/docs/checks/machineReadableDependencies",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [
@@ -265,8 +265,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/limitRepoAdmins",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -296,12 +296,12 @@
     "code_name": "identifyModifiedDependencies",
     "default_priority_group": "P14",
     "is_c_scrm": true,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/111",
     "details_url": "https://openpathfinder.com/docs/checks/identifyModifiedDependencies",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -326,8 +326,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/requireCodeOwnersReviewForLargeTeams",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -370,8 +370,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/commitSignoffForWeb",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [
@@ -405,8 +405,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/preventLandingSensitiveCommits",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -441,8 +441,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/blockWorkflowPRApproval",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -481,12 +481,12 @@
     "code_name": "consistentBuildProcessDocs",
     "default_priority_group": "P12",
     "is_c_scrm": true,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/105",
     "details_url": "https://openpathfinder.com/docs/checks/consistentBuildProcessDocs",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -507,12 +507,12 @@
     "code_name": "MFAImpersonationDefense",
     "default_priority_group": "P1",
     "is_c_scrm": true,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/66",
     "details_url": "https://openpathfinder.com/docs/checks/MFAImpersonationDefense",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -559,8 +559,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/restrictOrgSecrets",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -599,8 +599,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/limitOrgOwners",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -630,8 +630,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/noForcePushDefaultBranch",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [
@@ -661,12 +661,12 @@
     "code_name": "assignCVEForKnownVulns",
     "default_priority_group": "P7",
     "is_c_scrm": true,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/91",
     "details_url": "https://openpathfinder.com/docs/checks/assignCVEForKnownVulns",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -691,8 +691,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/automateDependencyManagement",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [
@@ -722,8 +722,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/activeAdminsSixMonths",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -753,8 +753,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/restrictedOrgPermissions",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -793,8 +793,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/requireTwoPartyReview",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -841,8 +841,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/automateVulnDetection",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -889,8 +889,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/runnerSecurityScanner",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -925,8 +925,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/githubWebhookSecrets",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -965,8 +965,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/includePackageLock",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [
@@ -1000,8 +1000,8 @@
     "implementation_type": "manual",
     "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/63",
     "details_url": "https://openpathfinder.com/docs/checks/owaspTop10Training",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1031,8 +1031,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/preventBranchProtectionBypass",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1067,8 +1067,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/PRsBeforeMerge",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1107,8 +1107,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/preventScriptInjection",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1147,8 +1147,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/SSHKeysRequired",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1183,8 +1183,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/noArbitraryCodeInPipeline",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1218,8 +1218,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/noSelfHostedRunners",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1250,12 +1250,12 @@
     "code_name": "upgradePathDocs",
     "default_priority_group": "P12",
     "is_c_scrm": true,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/106",
     "details_url": "https://openpathfinder.com/docs/checks/upgradePathDocs",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -1280,8 +1280,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/verifiedActionsOnly",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1328,8 +1328,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/limitWorkflowWritePermissions",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1372,8 +1372,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/annualDependencyRefresh",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -1394,12 +1394,12 @@
     "code_name": "includeCVEInReleaseNotes",
     "default_priority_group": "P7",
     "is_c_scrm": false,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/92",
     "details_url": "https://openpathfinder.com/docs/checks/includeCVEInReleaseNotes",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -1424,8 +1424,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/scanCommitsForSensitiveInfo",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1464,8 +1464,8 @@
     "implementation_type": "computed",
     "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/67",
     "details_url": "https://openpathfinder.com/docs/checks/noSensitiveInfoInRepositories",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1500,8 +1500,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/upToDateDefaultBranchBeforeMerge",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [
@@ -1535,8 +1535,8 @@
     "implementation_type": "computed",
     "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/75",
     "details_url": "https://openpathfinder.com/docs/checks/adminRepoCreationOnly",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1567,12 +1567,12 @@
     "code_name": "ciAndCdPipelineAsCode",
     "default_priority_group": "P12",
     "is_c_scrm": true,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/108",
     "details_url": "https://openpathfinder.com/docs/checks/ciAndCdPipelineAsCode",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [
@@ -1602,8 +1602,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/commitStatusChecks",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1638,12 +1638,12 @@
     "code_name": "npmPublicationMFA",
     "default_priority_group": "P3",
     "is_c_scrm": true,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/72",
     "details_url": "https://openpathfinder.com/docs/checks/npmPublicationMFA",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1673,8 +1673,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/patchExploitableNoncCriticalVulns60Days",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -1703,8 +1703,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/forkWorkflowApproval",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1734,8 +1734,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/resolveLinterWarnings",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1770,8 +1770,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/activeWritersSixMonths",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1801,8 +1801,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/twoOrMoreOwnersForAccess",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1837,8 +1837,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/staticAppSecTesting",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1885,12 +1885,12 @@
     "code_name": "incidentResponsePlan",
     "default_priority_group": "P7",
     "is_c_scrm": false,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/90",
     "details_url": "https://openpathfinder.com/docs/checks/incidentResponsePlan",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -1915,8 +1915,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/patchNonCriticalVulns90Days",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -1941,8 +1941,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/pinActionsToSHA",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -1984,12 +1984,12 @@
     "code_name": "softwareArchitectureDocs",
     "default_priority_group": "P12",
     "is_c_scrm": false,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/107",
     "details_url": "https://openpathfinder.com/docs/checks/softwareArchitectureDocs",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2019,8 +2019,8 @@
     "implementation_type": "computed",
     "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/43",
     "details_url": "https://openpathfinder.com/docs/checks/githubOrgMFA",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2055,12 +2055,12 @@
     "code_name": "defineFunctionalRoles",
     "default_priority_group": "P4",
     "is_c_scrm": true,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/77",
     "details_url": "https://openpathfinder.com/docs/checks/defineFunctionalRoles",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2103,8 +2103,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/preventDeletionDefaultBranch",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2139,12 +2139,12 @@
     "code_name": "useCVDToolForVulns",
     "default_priority_group": "P7",
     "is_c_scrm": false,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/88",
     "details_url": "https://openpathfinder.com/docs/checks/useCVDToolForVulns",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [
@@ -2174,8 +2174,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/patchCriticalVulns30Days",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -2200,12 +2200,12 @@
     "code_name": "regressionTestsForVulns",
     "default_priority_group": "P8",
     "is_c_scrm": false,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/93",
     "details_url": "https://openpathfinder.com/docs/checks/regressionTestsForVulns",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -2230,8 +2230,8 @@
     "implementation_type": "manual",
     "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/52",
     "details_url": "https://openpathfinder.com/docs/checks/softwareDesignTraining",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2257,12 +2257,12 @@
     "code_name": "orgToolingMFA",
     "default_priority_group": "P1",
     "is_c_scrm": false,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/65",
     "details_url": "https://openpathfinder.com/docs/checks/orgToolingMFA",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2296,8 +2296,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/githubWriteAccessRoles",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2336,8 +2336,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/requireSignedCommits",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [
@@ -2371,8 +2371,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/useHwKeyGithubNonInteractive",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2411,12 +2411,12 @@
     "code_name": "securityMdMeetsOpenJSCVD",
     "default_priority_group": "P7",
     "is_c_scrm": false,
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/87",
     "details_url": "https://openpathfinder.com/docs/checks/securityMdMeetsOpenJSCVD",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [],
       "how_to": [],
@@ -2445,8 +2445,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/staticCodeAnalysis",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2497,8 +2497,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/useHwKeyOtherContexts",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2536,8 +2536,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/workflowSecurityScanner",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
@@ -2576,8 +2576,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openpathfinder.com/docs/checks/injectedSecretsAtRuntime",
-    "created_at": "2025-02-03T17:00:37.523Z",
-    "updated_at": "2025-02-03T17:00:37.523Z",
+    "created_at": "2025-02-13T07:16:55.683Z",
+    "updated_at": "2025-02-13T07:16:55.683Z",
     "resources": {
       "mitre": [
         {
