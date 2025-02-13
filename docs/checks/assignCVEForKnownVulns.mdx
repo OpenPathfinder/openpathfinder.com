@@ -18,6 +18,10 @@ This check is currently under development and not yet implemented. [Click here t
 Ensure all known security vulnerabilities are issued a CVE
 <!-- DESCRIPTION:END -->
 
+## Dashboard Inclusion
+
+We use the column `has_assignCVEForKnownVulns_policy` from the table `projects` to calculate the status, this column is populated using the [bulk importer](/docs/visionBoard/importers#bulk-importer). [More information](https://github.com/OpenPathfinder/visionBoard/issues/91)
+
 <!-- DETAILS:START -->
 ## Details
 - Default Category: coordinated vulnerability disclosure

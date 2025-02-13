@@ -18,6 +18,10 @@ This check is currently under development and not yet implemented. [Click here t
 Ensure the project utilizes a CVD tool to privately receive and manage external vulnerability reports (e.g., HackerOne, GitHub PVR)
 <!-- DESCRIPTION:END -->
 
+## Dashboard Inclusion
+
+We use the column `has_useCVDToolForVulns_policy` from the table `projects` to calculate the status, this column is populated using the [bulk importer](/docs/visionBoard/importers#bulk-importer). [More information](https://github.com/OpenPathfinder/visionBoard/issues/88)
+
 <!-- DETAILS:START -->
 ## Details
 - Default Category: coordinated vulnerability disclosure
