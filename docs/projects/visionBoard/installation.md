@@ -83,3 +83,25 @@ To install visionBoard from source:
    ```bash
    alias visionBoard="node visionBoard.js"
    ```
+
+## Running Tests Locally
+
+To run visionBoard tests locally:
+
+1. Start the infrastructure:
+
+  ```bash
+  npm run infra:start
+  ```
+
+2. Run the database migrations:
+
+  ```bash
+  npm run db:migrate
+  ```
+
+3. Run the tests:
+
+  ```bash
+  npm run test
+  ```
