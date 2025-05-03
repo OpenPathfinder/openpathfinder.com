@@ -1,0 +1,80 @@
+---
+title: "VisionBoard v1.0.0 Milestone Progress – May 2025 Update 🚀"
+authors: [ulisesgascon]
+description: "We're excited to announce a major set of improvements bringing us significantly closer to the v1.0.0 release of VisionBoard. This update strengthens the platform’s architecture, testing, and deployment—paving the way for new management and developer experience (DX) features."
+slug: progress-summary
+---
+
+📌 **Milestone:** [v1.0.0 Roadmap](https://github.com/orgs/OpenPathfinder/projects/3)
+
+We're excited to announce a major set of improvements bringing us significantly closer to the `v1.0.0` release of VisionBoard. This update strengthens the platform’s architecture, testing, and deployment—paving the way for new management and developer experience (DX) features.
+
+## ✅ What's New
+
+### 🔧 Web Server & Routing
+- Replaced static file serving with a new **Express-based web server**.
+- Added routes for REST API:
+  - `/api/v1/__health`
+  - `/api/v1/generate-reports`
+ - Website routes: `/`, `/projects/:id`
+- Built with graceful startup and robust shutdown logic.
+
+### 🖥 Dynamic Website Rendering
+- EJS templating with partials for consistent layout and DRY structure.
+- Website routes now render **dynamic content** while maintaining support for **static report generation** (backward-compatible).
+
+### ✅ End-to-End Testing
+- Fully integrated **Playwright-based E2E tests** with PostgreSQL-seeded test data.
+- CI-powered HTML reports and screenshots for visual regression tracking.
+- `data-testid` attributes added to templates for selector stability.
+- GitHub Actions integrated for test results.
+
+### 🧪 Unit & Integration Tests
+- HTTP route coverage (`/`, `/api/v1/__health`, `/projects/:id`) using Supertest.
+- Tests for schema validation, internal link builders, and utility functions.
+
+### 🔍 API Validation & Swagger
+- Full request/response validation via OpenAPI.
+- Swagger UI for easy API exploration.
+- API middleware limited to `/api/*` routes—UI remains unaffected.
+
+### 🛡 Secure, Health-Checked Containers
+- Hardened Docker and Compose workflows (drop root privileges, health checks...)
+
+### 🧹 Refactoring & Structure
+- Introduced modular `src/reports/` structure for better testability and separation of concerns.
+- Isolated static assets and route middleware from server entrypoint.
+
+### 📦 Dependency Updates
+- **Added:** `express@5`, `supertest`, `@playwright/test` and `swagger-endpoint-validator`
+- **Removed:** `finalhandler`, `serve-index`
+
+### 📁 New Directories
+- `src/httpServer/`: Server setup, routing, middleware.
+- `src/reports/templates/partials/`: EJS partials for shared layout.
+- `src/schemas/`: JSON schema validation.
+- `e2e/`: Playwright tests, setup/teardown scripts, CI workflows.
+
+
+📄 **Full changelog:** [Compare v0.1.0-beta3...may'25 changes](https://github.com/OpenPathfinder/visionBoard/compare/v0.1.0-beta3...424ae8c1e2237c8e195e4f82fb51f5a0369d5f01)
+
+
+## 🔭 What’s Next?
+
+We’re now focusing on feature expansion and developer tools:
+
+- [🔧 Rewrite CLI to use REST API directly](https://github.com/OpenPathfinder/visionBoard-cli/issues/1)
+- [🛠 Build Admin UI for project and checklist management](https://github.com/OpenPathfinder/visionBoard/issues/220)
+- Rethink Scorecard integration for broader utility.
+- More enhancements in DX, tooling, and project observability.
+
+📌 Track progress on the [v1.0.0 Project Board](https://github.com/orgs/OpenPathfinder/projects/3)
+
+---
+
+## 🙌 Thanks
+
+A huge thank-you to all contributors helping make VisionBoard what it is today. Your efforts are building a rock-solid foundation for the features to come!
+
+> Thank you for stopping by, and we look forward to building an amazing open source ecosystem together!  
+> — Ulises Gascón
