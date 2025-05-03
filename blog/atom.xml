@@ -2,11 +2,98 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://openpathfinder.com/blog</id>
     <title>OpenPathfinder Blog</title>
-    <updated>2025-01-05T00:00:00.000Z</updated>
+    <updated>2025-05-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://openpathfinder.com/blog"/>
     <subtitle>OpenPathfinder Blog</subtitle>
     <icon>https://openpathfinder.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[VisionBoard v1.0.0 Milestone Progress – May 2025 Update 🚀]]></title>
+        <id>https://openpathfinder.com/blog/progress-summary</id>
+        <link href="https://openpathfinder.com/blog/progress-summary"/>
+        <updated>2025-05-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We're excited to announce a major set of improvements bringing us significantly closer to the v1.0.0 release of VisionBoard. This update strengthens the platform’s architecture, testing, and deployment—paving the way for new management and developer experience (DX) features.]]></summary>
+        <content type="html"><![CDATA[<p>📌 <strong>Milestone:</strong> <a href="https://github.com/orgs/OpenPathfinder/projects/3" target="_blank" rel="noopener noreferrer">v1.0.0 Roadmap</a></p>
+<p>We're excited to announce a major set of improvements bringing us significantly closer to the <code>v1.0.0</code> release of VisionBoard. This update strengthens the platform’s architecture, testing, and deployment—paving the way for new management and developer experience (DX) features.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-new">✅ What's New<a href="https://openpathfinder.com/blog/progress-summary#-whats-new" class="hash-link" aria-label="Direct link to ✅ What's New" title="Direct link to ✅ What's New">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-web-server--routing">🔧 Web Server &amp; Routing<a href="https://openpathfinder.com/blog/progress-summary#-web-server--routing" class="hash-link" aria-label="Direct link to 🔧 Web Server &amp; Routing" title="Direct link to 🔧 Web Server &amp; Routing">​</a></h3>
+<ul>
+<li>Replaced static file serving with a new <strong>Express-based web server</strong>.</li>
+<li>Added routes for REST API:<!-- -->
+<ul>
+<li><code>/api/v1/__health</code></li>
+<li><code>/api/v1/generate-reports</code></li>
+<li>Website routes: <code>/</code>, <code>/projects/:id</code>.</li>
+</ul>
+</li>
+<li>Built with graceful startup and robust shutdown logic.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-dynamic-website-rendering">🖥 Dynamic Website Rendering<a href="https://openpathfinder.com/blog/progress-summary#-dynamic-website-rendering" class="hash-link" aria-label="Direct link to 🖥 Dynamic Website Rendering" title="Direct link to 🖥 Dynamic Website Rendering">​</a></h3>
+<ul>
+<li>EJS templating with partials for consistent layout and DRY structure.</li>
+<li>Website routes now render <strong>dynamic content</strong> while maintaining support for <strong>static report generation</strong> (backward-compatible).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-end-to-end-testing">✅ End-to-End Testing<a href="https://openpathfinder.com/blog/progress-summary#-end-to-end-testing" class="hash-link" aria-label="Direct link to ✅ End-to-End Testing" title="Direct link to ✅ End-to-End Testing">​</a></h3>
+<ul>
+<li>Fully integrated <strong>Playwright-based E2E tests</strong> with PostgreSQL-seeded test data.</li>
+<li>CI-powered HTML reports and screenshots for visual regression tracking.</li>
+<li><code>data-testid</code> attributes added to templates for selector stability.</li>
+<li>GitHub Actions integrated for test results.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-unit--integration-tests">🧪 Unit &amp; Integration Tests<a href="https://openpathfinder.com/blog/progress-summary#-unit--integration-tests" class="hash-link" aria-label="Direct link to 🧪 Unit &amp; Integration Tests" title="Direct link to 🧪 Unit &amp; Integration Tests">​</a></h3>
+<ul>
+<li>HTTP route coverage (<code>/</code>, <code>/api/v1/__health</code>, <code>/projects/:id</code>) using Supertest.</li>
+<li>Tests for schema validation, internal link builders, and utility functions.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-validation--swagger">🔍 API Validation &amp; Swagger<a href="https://openpathfinder.com/blog/progress-summary#-api-validation--swagger" class="hash-link" aria-label="Direct link to 🔍 API Validation &amp; Swagger" title="Direct link to 🔍 API Validation &amp; Swagger">​</a></h3>
+<ul>
+<li>Full request/response validation via OpenAPI.</li>
+<li>Swagger UI for easy API exploration.</li>
+<li>API middleware limited to <code>/api/*</code> routes—UI remains unaffected.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-secure-health-checked-containers">🛡 Secure, Health-Checked Containers<a href="https://openpathfinder.com/blog/progress-summary#-secure-health-checked-containers" class="hash-link" aria-label="Direct link to 🛡 Secure, Health-Checked Containers" title="Direct link to 🛡 Secure, Health-Checked Containers">​</a></h3>
+<ul>
+<li>Hardened Docker and Compose workflows (drop root privileges, health checks...)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-refactoring--structure">🧹 Refactoring &amp; Structure<a href="https://openpathfinder.com/blog/progress-summary#-refactoring--structure" class="hash-link" aria-label="Direct link to 🧹 Refactoring &amp; Structure" title="Direct link to 🧹 Refactoring &amp; Structure">​</a></h3>
+<ul>
+<li>Introduced modular <code>src/reports/</code> structure for better testability and separation of concerns.</li>
+<li>Isolated static assets and route middleware from server entrypoint.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-dependency-updates">📦 Dependency Updates<a href="https://openpathfinder.com/blog/progress-summary#-dependency-updates" class="hash-link" aria-label="Direct link to 📦 Dependency Updates" title="Direct link to 📦 Dependency Updates">​</a></h3>
+<ul>
+<li><strong>Added:</strong> <code>express@5</code>, <code>supertest</code>, <code>@playwright/test</code> and <code>swagger-endpoint-validator</code></li>
+<li><strong>Removed:</strong> <code>finalhandler</code>, <code>serve-index</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-directories">📁 New Directories<a href="https://openpathfinder.com/blog/progress-summary#-new-directories" class="hash-link" aria-label="Direct link to 📁 New Directories" title="Direct link to 📁 New Directories">​</a></h3>
+<ul>
+<li><code>src/httpServer/</code>: Server setup, routing, middleware.</li>
+<li><code>src/reports/templates/partials/</code>: EJS partials for shared layout.</li>
+<li><code>src/schemas/</code>: JSON schema validation.</li>
+<li><code>e2e/</code>: Playwright tests, setup/teardown scripts, CI workflows.</li>
+</ul>
+<p>📄 <strong>Full changelog:</strong> <a href="https://github.com/OpenPathfinder/visionBoard/compare/v0.1.0-beta3...424ae8c1e2237c8e195e4f82fb51f5a0369d5f01" target="_blank" rel="noopener noreferrer">Compare v0.1.0-beta3...may'25 changes</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-next">🔭 What’s Next?<a href="https://openpathfinder.com/blog/progress-summary#-whats-next" class="hash-link" aria-label="Direct link to 🔭 What’s Next?" title="Direct link to 🔭 What’s Next?">​</a></h2>
+<p>We’re now focusing on feature expansion and developer tools:</p>
+<ul>
+<li><a href="https://github.com/OpenPathfinder/visionBoard-cli/issues/1" target="_blank" rel="noopener noreferrer">🔧 Rewrite CLI to use REST API directly</a></li>
+<li><a href="https://github.com/OpenPathfinder/visionBoard/issues/220" target="_blank" rel="noopener noreferrer">🛠 Build Admin UI for project and checklist management</a></li>
+<li>Rethink Scorecard integration for broader utility.</li>
+<li>More enhancements in DX, tooling, and project observability.</li>
+</ul>
+<p>📌 Track progress on the <a href="https://github.com/orgs/OpenPathfinder/projects/3" target="_blank" rel="noopener noreferrer">v1.0.0 Project Board</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-thanks">🙌 Thanks<a href="https://openpathfinder.com/blog/progress-summary#-thanks" class="hash-link" aria-label="Direct link to 🙌 Thanks" title="Direct link to 🙌 Thanks">​</a></h2>
+<p>A huge thank-you to all contributors helping make VisionBoard what it is today. Your efforts are building a rock-solid foundation for the features to come!</p>
+<blockquote>
+<p>Thank you for stopping by, and we look forward to building an amazing open source ecosystem together!<br>
+<!-- -->— Ulises Gascón</p>
+</blockquote>]]></content>
+        <author>
+            <name>Ulises Gascón</name>
+            <uri>https://ulisesgascon.com</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome to OpenPathfinder: Explore Our Mission and Tools]]></title>
         <id>https://openpathfinder.com/blog/welcome</id>
