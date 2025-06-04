@@ -25,12 +25,12 @@ const config = {
       {
         analytics: {
           enabled: true,
-          apiKey: process.env.ORAMA_CLOUD_PRIVATE_API_KEY,
-          indexId: process.env.ORAMA_CLOUD_INDEX_ID,
-          deploy: process.env.ENABLE_ORAMA_CLOUD_DEPLOY,
+          apiKey: process.env.ORAMA_CLOUD_PRIVATE_API_KEY || '',
+          indexId: process.env.ORAMA_CLOUD_INDEX_ID || '',
+          deploy: process.env.ENABLE_ORAMA_CLOUD_DEPLOY === 'true',
         },
         searchbox: {
-        placeholder: "Search...",
+          placeholder: "Search...",
         },
         searchButton: {
           text: "Click here to search..."
