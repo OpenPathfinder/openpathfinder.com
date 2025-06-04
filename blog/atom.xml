@@ -15,6 +15,7 @@
         <summary type="html"><![CDATA[We're excited to announce a major set of improvements bringing us significantly closer to the v1.0.0 release of VisionBoard. This update strengthens the platform’s architecture, testing, and deployment—paving the way for new management and developer experience (DX) features.]]></summary>
         <content type="html"><![CDATA[<p>📌 <strong>Milestone:</strong> <a href="https://github.com/orgs/OpenPathfinder/projects/3" target="_blank" rel="noopener noreferrer">v1.0.0 Roadmap</a></p>
 <p>We're excited to announce a major set of improvements bringing us significantly closer to the <code>v1.0.0</code> release of VisionBoard. This update strengthens the platform’s architecture, testing, and deployment—paving the way for new management and developer experience (DX) features.</p>
+<!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-new">✅ What's New<a href="https://openpathfinder.com/blog/visionboard-update-may-2025#-whats-new" class="hash-link" aria-label="Direct link to ✅ What's New" title="Direct link to ✅ What's New">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="-web-server--routing">🔧 Web Server &amp; Routing<a href="https://openpathfinder.com/blog/visionboard-update-may-2025#-web-server--routing" class="hash-link" aria-label="Direct link to 🔧 Web Server &amp; Routing" title="Direct link to 🔧 Web Server &amp; Routing">​</a></h3>
 <ul>
@@ -101,6 +102,7 @@
         <updated>2025-01-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Learn about OpenPathfinder's mission, VisionBoard, FortSphere, and History. Watch our Proof of Concept demo and discover how Docusaurus helps power our documentation.]]></summary>
         <content type="html"><![CDATA[<p>Welcome to the <strong>OpenPathfinder</strong> blog! We're thrilled to have you here. This blog will serve as a space to share project insights, tutorials, updates, and community spotlights. If you’re new to OpenPathfinder, this post will give you an overview of what we’re all about, including <strong>VisionBoard</strong>, <strong>FortSphere</strong>, and our project <strong>History</strong>. Plus, we’ve included a special <strong>demo video</strong> below—check it out!</p>
+<!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-openpathfinder">What is OpenPathfinder?<a href="https://openpathfinder.com/blog/welcome#what-is-openpathfinder" class="hash-link" aria-label="Direct link to What is OpenPathfinder?" title="Direct link to What is OpenPathfinder?">​</a></h2>
 <p>OpenPathfinder is a collaborative open source initiative that empowers developers and organizations to secure, monitor, and manage their projects efficiently. We are committed to building tools that:</p>
 <ul>
