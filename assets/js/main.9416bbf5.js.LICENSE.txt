@@ -54,6 +54,11 @@ prismjs/prism.js:
  * LICENSE file in the root directory of this source tree.
  */
 
+/**
+ * Checks if an event is supported in the current execution environment.
+ * @license Modernizr 3.0.0pre (Custom Build) | MIT
+ */
+
 /** @license React v16.13.1
  * react-is.production.min.js
  *
