@@ -1,10 +1,6 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
+require('dotenv').config();
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -23,6 +19,25 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  plugins: [
+    [
+      "@orama/plugin-docusaurus-v3",
+      {
+        analytics: {
+          enabled: true,
+          apiKey: process.env.ORAMA_CLOUD_PRIVATE_API_KEY || '',
+          indexId: process.env.ORAMA_CLOUD_INDEX_ID || '',
+          deploy: process.env.ENABLE_ORAMA_CLOUD_DEPLOY === 'true',
+        },
+        searchbox: {
+          placeholder: "Search...",
+        },
+        searchButton: {
+          text: "Click here to search..."
+        }
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -61,9 +76,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: 'dark', 
+        defaultMode: 'dark',
         disableSwitch: true,
-        respectPrefersColorScheme: false        
+        respectPrefersColorScheme: false
       },
       image: 'img/openPathfinder-social-card.jpg',
       navbar: {
@@ -72,7 +87,7 @@ const config = {
           alt: 'OpenPathfinder Logo',
           src: 'img/openPathfinder_profile.png',
         },
-        style: 'dark', 
+        style: 'dark',
         items: [
           {
             type: 'docSidebar',
@@ -82,9 +97,9 @@ const config = {
           },
           // {to: '/docs/projects/fortSphere', label: 'fortSphere', position: 'left'},
           // {to: '/docs/projects/visionBoard', label: 'visionBoard', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/contribute', label: 'Contribute', position: 'left'},
-          {to: '/support', label: 'Support', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/contribute', label: 'Contribute', position: 'left' },
+          { to: '/support', label: 'Support', position: 'left' },
           {
             href: 'https://github.com/openPathfinder/openpathfinder.com',
             label: 'GitHub',
